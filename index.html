@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turixtar</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive_cards.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/owl/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/owl/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container __header-container">
+                <div class="__upper-bar">
+                    <a class="navbar-brand" href="#">Sua Logo</a>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control h-100" type="search" placeholder="Pesquise por um estado ou cidade" aria-label="Search">
+                        <span class="mdi mdi-magnify"></span>
+                    </form>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <button class="__header-login-btn">
+                        <span class="mdi mdi-account"></span>
+                        Fazer login
+                    </button>
+                    <div class="collapse navbar-collapse my-3" id="navbarSupportedContent">
+                        <div class="navbar-nav mr-auto">
+                            <a class="__navbar-link" href="#">
+                                <span class="mdi mdi-walk"></span> Passeios
+                            </a>
+                            <a class="__navbar-link" href="#">
+                                <span class="mdi mdi-silverware-variant"></span> Restaurantes
+                            </a>
+                            <a class="__navbar-link" href="#">
+                                <span class="mdi mdi-pine-tree"></span> Parques
+                            </a>
+                            <a class="__navbar-link" href="#">
+                                <span class="mdi mdi-hiking"></span> Aventura
+                            </a>
+                            <a class="__navbar-link" href="#">
+                                <span class="mdi mdi-bank"></span>Museus
+                            </a>
+                            <a class="__navbar-link" href="#">
+                                <span class="mdi mdi-castle"></span>Temáticos
+                            </a>
+                            <a class="__navbar-link" href="#">
+                                <span class="mdi mdi-van-utility"></span>Transfer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="__booking-box">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <form class="__booking-box-form" action="#">
+                        <div class="form-group">
+                            <label for="select1">Localização</label>
+                            <input type="text" class="form-control" name="destino" placeholder="Escolha um destino" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="select2">Check-in</label>
+                            <input type="date" class="form-control" name="entrada" placeholder="Insira uma data de entrada" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="select3">Check-out</label>
+                            <input type="date" class="form-control" name="saida" placeholder="Insira uma data de saída" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="select4">Hóspedes</label>
+                            <select name="hospedes" class="form-control">
+                                <option value="" selected>SELECIONE</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+                            </select>
+                        </div>
+                        <button class="__booking-search-btn" type="submit"><span class="mdi mdi-magnify"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container __destinations">
+        <div class="__destinations-fst-half">
+            <div class="__destination-card __dest-1">
+
+            </div>
+            <div class="__destination-card __dest-2">
+
+            </div>
+        </div>
+
+        <div class="__destinations-snd-half">
+            <div class="__destination-card __dest-3">
+
+            </div>
+            <div class="__destination-card __dest-4">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container __cards-container __aventura">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 __text-side">
+                <h3><span class="mdi mdi-tag"></span> Melhores ofertas</h3>
+                <p>As atrações perfeitas para curtir com seus familiares. Aproveite as nossas promoções imperdíveis! <a href="#">Ver todos</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-carousel __cards-side">
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura1.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura2.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura4.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura5.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container __cards-container __restaurantes">
+        <div class="row row-reverse">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 __text-side">
+                <h3>Temáticos <span class="mdi mdi-castle"></span></h3>
+                <p>Visite as melhores trilhas da região e crie memórias inesquecíveis com a galera! <a href="#">Ver todos</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-carousel __cards-side">
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-restaurante1.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-restaurante2.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-restaurante3.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-restaurante4.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-restaurante5.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container __cards-container __hoteis">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 __text-side">
+                <h3> <span class="mdi mdi-hiking"></span> Aventuras</h3>
+                <p>Confira aventuras radicais perto de você e vivencie experiências únicas com os melhores preços! <a href="#">Ver todos</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-carousel __cards-side">
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-hotel1.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-hotel2.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-hotel3.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-hotel4.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-hotel5.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="#" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="__promo-container">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-4 teste-imagem">
+                    <img src="assets/images/florianopolis-sc.jpg" alt="Promo férias 2021">
+                </div>
+                <div class="col-lg-8 teste-imagem">
+                    <img src="assets/images/florianopolis-sc.jpg" alt="Promo descontos imperdíveis">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="__all-attractions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 __attractions-title">
+                    <h2>Confira todas as atrações</h2>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="__attractions-card">
+                        <img src="assets/images/cavera.jpg" alt="Caverá country park">
+                        <span class="mdi mdi-castle"></span>
+                        <h3>Temáticos</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="__attractions-card">
+                        <img src="assets/images/hiking.jpg" alt="Caminhada">
+                        <span class="mdi mdi-hiking"></span>
+                        <h3>Aventura</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="__attractions-card">
+                        <img src="assets/images/museu.jpg" alt="Museus">
+                        <span class="mdi mdi-bank"></span>
+                        <h3>Museus</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="__attractions-card">
+                        <img src="assets/images/trilha.jpg" alt="Passeios">
+                        <span class="mdi mdi-walk"></span>
+                        <h3>Passeios</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="__benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="__benefits-card">
+                        <span class="mdi mdi-lock"></span>
+                        <h3>Segurança na compra</h3>
+                        <p>Compre na internet de maneira segura e facilitada.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="__benefits-card">
+                        <span class="mdi mdi-credit-card-outline"></span>
+                        <h3>Flexibilidade no pagamento</h3>
+                        <p>Diferentes meios e parcelamentos que cabem no seu bolso.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="__benefits-card">
+                        <span class="mdi mdi-checkbox-marked-outline"></span>
+                        <h3>Voucher recebido na hora</h3>
+                        <p>Tenha seu voucher gerado automaticamente logo após a compra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="__footer">
+        <div class="container __footer-content">
+            <div class="__footer-icons">
+                <img src="assets/images/meios-pagamento.png" alt="meios de pagamento">
+            </div>
+            <hr>
+            <div class="input-group">
+                <input type="email" name="email" id="footer_email" class="form-control __email-input" aria-label="..." placeholder="Deixe aqui o seu email para receber promoções">
+                <div class="form-group-btn">
+                    <button type="submit" class="btn __email-input-btn">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <h2>&copy Desenvolvido com <span><i class="mdi mdi-heart" aria-hidden="true"></i></span> pelo grupo SEJAPRIME</h2>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/plugins/owl/owl-carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                nav: true,
+                navText: ["<span class='mdi mdi-arrow-left'>", "<span class='mdi mdi-arrow-right'>"],
+                center: true,
+                responsive: {
+                    0: {
+                        items: 1.2
+                    },
+                    425: {
+                        items: 2
+                    },
+                    576: {
+                        items: 2.2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
