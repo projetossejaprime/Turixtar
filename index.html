@@ -18,58 +18,54 @@
 </head>
 
 <body>
-    <header>
+    <header class="mb-6">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container __header-container">
-                <div class="__upper-bar">
-                    <a class="navbar-brand" href="#">Sua Logo</a>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control h-100" type="search" placeholder="Pesquise por um estado ou cidade" aria-label="Search">
-                        <span class="mdi mdi-magnify"></span>
-                    </form>
+                <a class="navbar-brand" href="#">Sua Logo</a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control h-100" type="search" placeholder="Pesquise por um estado ou cidade" aria-label="Search">
+                    <span class="mdi mdi-magnify"></span>
+                </form>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="__header-login-btn">
+                    <span class="mdi mdi-account"></span>
+                    Fazer login
+                </button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
+                </button>
 
-                    <button class="__header-login-btn">
-                        <span class="mdi mdi-account"></span>
-                        Fazer login
-                    </button>
-                    <div class="collapse navbar-collapse my-3" id="navbarSupportedContent">
-                        <div class="navbar-nav mr-auto">
-                            <a class="__navbar-link" href="#">
-                                <span class="mdi mdi-walk"></span> Passeios
-                            </a>
-                            <a class="__navbar-link" href="#">
-                                <span class="mdi mdi-silverware-variant"></span> Restaurantes
-                            </a>
-                            <a class="__navbar-link" href="#">
-                                <span class="mdi mdi-pine-tree"></span> Parques
-                            </a>
-                            <a class="__navbar-link" href="#">
-                                <span class="mdi mdi-hiking"></span> Aventura
-                            </a>
-                            <a class="__navbar-link" href="#">
-                                <span class="mdi mdi-bank"></span>Museus
-                            </a>
-                            <a class="__navbar-link" href="#">
-                                <span class="mdi mdi-castle"></span>Temáticos
-                            </a>
-                            <a class="__navbar-link" href="#">
-                                <span class="mdi mdi-van-utility"></span>Transfer
-                            </a>
-                        </div>
+                <div class="collapse navbar-collapse my-3" id="navbarSupportedContent">
+                    <div class="navbar-nav mr-auto">
+                        <a class="__navbar-link" href="#">
+                            <span class="mdi mdi-walk"></span> Passeios
+                        </a>
+                        <a class="__navbar-link" href="#">
+                            <span class="mdi mdi-silverware-variant"></span> Restaurantes
+                        </a>
+                        <a class="__navbar-link" href="#">
+                            <span class="mdi mdi-pine-tree"></span> Parques
+                        </a>
+                        <a class="__navbar-link" href="#">
+                            <span class="mdi mdi-hiking"></span> Aventura
+                        </a>
+                        <a class="__navbar-link" href="#">
+                            <span class="mdi mdi-bank"></span>Museus
+                        </a>
+                        <a class="__navbar-link" href="#">
+                            <span class="mdi mdi-castle"></span>Temáticos
+                        </a>
+                        <a class="__navbar-link" href="#">
+                            <span class="mdi mdi-van-utility"></span>Transfer
+                        </a>
                     </div>
                 </div>
-
-
-
             </div>
         </nav>
     </header>
 
-    <section class="__booking-box">
+    <section class="__booking-box mb-6">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-12">
@@ -99,27 +95,24 @@
         </div>
     </section>
 
-    <div class="container __destinations">
-        <div class="__destinations-fst-half">
+    <div class="container mb-6">
+        <div class="__destination-gallery">
             <div class="__destination-card __dest-1">
-
+                <img src="assets/images/imbituba-sc.jpg" alt="Imagem de Imbituba-SC">
             </div>
             <div class="__destination-card __dest-2">
-
+                <img src="assets/images/laguna-sc.jpg" alt="Imagem de Laguna-SC">
             </div>
-        </div>
-
-        <div class="__destinations-snd-half">
             <div class="__destination-card __dest-3">
-
+                <img src="assets/images/florianopolis-sc.jpg" alt="Imagem de Floarianópolis-SC">
             </div>
             <div class="__destination-card __dest-4">
-
+                <img src="assets/images/curitiba-pr.jpg" alt="Imagem de Curitiba-PR">
             </div>
         </div>
     </div>
 
-    <div class="container __cards-container __aventura">
+    <div class="container __cards-container mb-6">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 __text-side">
                 <h3><span class="mdi mdi-tag"></span> Melhores ofertas</h3>
@@ -134,7 +127,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +140,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +153,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +166,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +179,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +187,7 @@
         </div>
     </div>
 
-    <div class="container __cards-container __restaurantes">
+    <div class="container __cards-container mb-6">
         <div class="row row-reverse">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 __text-side">
                 <h3>Temáticos <span class="mdi mdi-castle"></span></h3>
@@ -209,7 +202,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -222,7 +215,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -235,7 +228,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -248,7 +241,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -261,7 +254,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -269,7 +262,7 @@
         </div>
     </div>
 
-    <div class="container __cards-container __hoteis">
+    <div class="container __cards-container mb-6">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 __text-side">
                 <h3> <span class="mdi mdi-hiking"></span> Aventuras</h3>
@@ -284,7 +277,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -297,7 +290,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -310,7 +303,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -323,7 +316,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -336,7 +329,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -344,7 +337,7 @@
         </div>
     </div>
 
-    <section class="__promo-container">
+    <section class="__promo-container mb-6">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-lg-4 teste-imagem">
@@ -357,7 +350,7 @@
         </div>
     </section>
 
-    <section class="__all-attractions">
+    <section class="__all-attractions mb-6">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 __attractions-title">
@@ -455,12 +448,15 @@
                 center: true,
                 responsive: {
                     0: {
+                        items: 1
+                    },
+                    320: {
                         items: 1.2
                     },
                     425: {
-                        items: 2
+                        items: 1.8
                     },
-                    576: {
+                    516: {
                         items: 2.2
                     },
                     768: {

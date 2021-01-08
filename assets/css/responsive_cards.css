@@ -1,6 +1,10 @@
 /* // Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
+    p {
+        font-size: 1rem !important;
+        line-height: normal !important;
+    }
     .__text-side {
         align-items: flex-start;
     }

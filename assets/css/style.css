@@ -23,6 +23,14 @@ body {
     height: 100%;
 }
 
+.mb-8 {
+    margin-bottom: 80px;
+}
+
+.mb-6 {
+    margin-bottom: 60px;
+}
+
 
 /* ================Utilities================ */
 
@@ -53,29 +61,79 @@ body {
 header .navbar {
     background: #FFF;
     border-top: 2px solid #969696;
-    border-bottom: 2px solid #969696;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 5px 10px;
     /* box-shadow: rgba(0, 0, 0, 0.3) 0 0 25px; */
 }
 
 .__header-container {
     display: flex !important;
-    flex-direction: column !important;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
     height: auto;
-    padding: 60px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
-@media (max-width: 767.98px) {
+.__header-container .navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+@media (max-width: 500px) {
+    .navbar-collapse .navbar-nav {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+    .__header-container .navbar-nav .__navbar-link {
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: start !important;
+        color: #000;
+        text-decoration: none !important;
+        width: 180px !important;
+        border-radius: 10px;
+        margin-right: 5px;
+        padding: 5px;
+        transition: .4s ease-in-out;
+    }
+}
+
+@media (max-width: 575.98px) {
     .__header-container {
+        justify-content: space-between !important;
         height: auto;
     }
     .__header-container .form-inline {
-        width: 100%;
+        width: 100% !important;
     }
-    .navbar-collapse {
-        width: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .__header-container {
+        justify-content: center !important;
+        height: auto;
+        max-width: 640px !important;
     }
+    .__header-container .form-inline {
+        width: auto !important;
+        max-width: 210px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .__header-container {
+        justify-content: space-between !important;
+    }
+    .__header-container .form-inline {
+        width: 85% !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 991.98px) {
     .navbar-collapse .navbar-nav {
         display: flex !important;
         flex-direction: row !important;
@@ -83,42 +141,14 @@ header .navbar {
     }
 }
 
-.__header-container .__upper-bar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-}
-
-.__header-container .__header-login-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    text-transform: uppercase;
-    background: #FFF;
-    height: 50px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    padding: 0 20px;
-    transition: .3s ease-in;
-}
-
-.__header-container .__header-login-btn:hover {
-    border: 1px solid black;
-}
-
-.__header-container .__header-login-btn span {
-    font-size: 2rem;
-    margin-right: 5px;
-}
-
 .__header-container .form-inline {
-    display: flex;
-    justify-content: center;
-    width: 75%;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    justify-content: center !important;
+    width: 65%;
     height: 50px;
+    margin-right: 15px;
 }
 
 .__header-container .form-inline input {
@@ -141,6 +171,35 @@ header .navbar {
     height: 50px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.__header-container .__header-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #FFF;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 0;
+    transition: .3s ease-in;
+}
+
+.__header-container .__header-login-btn:hover {
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+.__header-container .__header-login-btn span {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.__header-container .navbar-collapse {
+    width: 100%;
 }
 
 .__header-container .navbar-nav {
@@ -178,7 +237,9 @@ header .navbar {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .__header-container .navbar-nav .__navbar-link {
-        width: 100px;
+        font-size: .8rem;
+        width: 120px;
+        margin-right: 10px;
     }
 }
 
@@ -186,7 +247,6 @@ header .navbar {
 /* ================::Booking box::================ */
 
 .__booking-box {
-    margin: 80px 0;
     height: 110px;
 }
 
@@ -195,8 +255,8 @@ header .navbar {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #707070;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 5px 10px;
     width: 100%;
     height: 100%;
     padding: 0 !important;
@@ -329,88 +389,86 @@ header .navbar {
 }
 
 
-/* ================::Destinations Container::================ */
+/* ================::Destination Container::================ */
 
-.__destinations {
-    display: flex;
-    flex-direction: row;
+.__destination-gallery {
+    display: grid;
+    grid-template-areas: 'dest-1 dest-2 dest-3 dest-3' 'dest-1 dest-2 dest-4 dest-4';
+    grid-gap: 5px;
     height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.__destinations .__destinations-fst-half,
-.__destinations .__destinations-snd-half {
+.__destination-gallery .__destination-card {
     height: 100%;
-    width: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
 
-.__destinations .__destinations-fst-half {
+.__destination-gallery .__destination-card::after {
+    content: "";
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.__destinations .__destinations-fst-half .__destination-card {
-    background: red;
-    height: 100%;
-    width: 49%;
-}
-
-.__destinations .__destinations-fst-half .__dest-1 {
-    background-image: url(../images/imbituba-sc.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.__destinations .__destinations-fst-half .__dest-2 {
-    background-image: url(../images/laguna-sc.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.__destinations-fst-half .__destination-card:first-child {
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-}
-
-.__destinations .__destinations-snd-half {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .4s;
 }
 
-.__destinations .__destinations-snd-half .__destination-card {
-    background: red;
-    height: 49%;
-    width: 99%;
+.__destination-gallery .__destination-card:hover::after {
+    content: ":)";
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
-.__destinations-snd-half .__destination-card:nth-child(1) {
-    border-top-right-radius: 12px;
+.__destination-gallery .__destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .4s;
 }
 
-.__destinations .__destinations-snd-half .__dest-3 {
-    background-image: url(../images/florianopolis-sc.jpg);
-    background-position: center;
-    background-size: cover;
+.__destination-gallery .__destination-card:hover>img {
+    transform: scale(1.08);
 }
 
-.__destinations-snd-half .__destination-card:nth-child(2) {
-    border-bottom-right-radius: 12px;
+.__destination-gallery .__dest-1 {
+    grid-area: dest-1;
 }
 
-.__destinations .__destinations-snd-half .__dest-4 {
-    background-image: url(../images/curitiba-pa.jpg);
-    background-position: center;
-    background-size: cover;
+.__destination-gallery .__dest-2 {
+    grid-area: dest-2;
+}
+
+.__destination-gallery .__dest-3 {
+    grid-area: dest-3;
+}
+
+.__destination-gallery .__dest-4 {
+    grid-area: dest-4;
 }
 
 
 /* ================::Cards Container::================ */
 
 .__cards-container {
-    margin: 80px;
     height: 300px;
+}
+
+.__cards-container-details {
+    height: auto;
 }
 
 @media (max-width: 991.98px) {
@@ -533,7 +591,7 @@ header .navbar {
     height: 100% !important;
     background-color: #FFFFFF;
     border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 15px;
 }
 
 .__cards-side .__card .__card-img-top {
@@ -636,15 +694,11 @@ header .navbar {
 
 /* ================::All Attractions Container::================ */
 
-.__all-attractions {
-    margin-bottom: 60px;
-}
-
 .__all-attractions h2 {
     color: #000;
     font-size: 2rem;
     font-weight: bold;
-    margin: 60px 0;
+    margin: 0 0 20px;
 }
 
 .__all-attractions .__attractions-card {
@@ -785,7 +839,7 @@ header .navbar {
     min-width: 300px;
     max-width: 700px;
     margin: 0 auto;
-    height: 60px;
+    height: 50px;
 }
 
 .__footer-content .__email-input {
@@ -837,5 +891,150 @@ header .navbar {
     color: white;
     font-size: 1rem;
     font-weight: 400;
+    text-align: center;
     margin: 0;
+}
+
+
+/* ==========================::::DETAILS::::========================== */
+
+
+/* ================DETAILS::Title::================ */
+
+.__details-title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.__details-title .__details-location {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+
+/* ================DETAILS::Content::================ */
+
+.__content .__content-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.__content .__content-box-list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 15px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+
+/* =====[Ticket Window::Start]===== */
+
+.__details-content .__ticket-window {
+    display: grid;
+    grid-template-areas: 'price-info price-info ticket-type' 'ticket-btn ticket-btn ticket-btn';
+    background-color: #fff;
+    height: 240px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 15px;
+    border-radius: 8px;
+    position: sticky !important;
+    top: 40px;
+}
+
+.__ticket-window .__ticket-price-info {
+    display: flex;
+    align-items: center;
+    grid-area: price-info;
+}
+
+.__ticket-window .__ticket-price-info h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    width: 98%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+.__ticket-window .__ticket-price-info h3 strong {
+    color: #4084FF;
+}
+
+.__ticket-window .__ticket-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: ticket-type;
+}
+
+.__ticket-window .__ticket-type span {
+    font-size: 3rem;
+}
+
+.__ticket-window .__ticket-type h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.__ticket-window .__ticket-btn {
+    display: flex;
+    align-items: center;
+    grid-area: ticket-btn;
+}
+
+.__ticket-window .__ticket-btn .__btn-ticket-window {
+    color: #fff;
+    text-transform: uppercase;
+    background: #1CB249;
+    border: 1px solid #1CB249;
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px;
+    transition: .3s ease-out;
+}
+
+.__ticket-window .__ticket-btn .__btn-ticket-window:hover {
+    background: #1cb24988;
+}
+
+
+/* =====[Ticket Window::End]===== */
+
+
+/* =====[Content Info::Start]===== */
+
+.__content .__content-info {
+    height: 240px;
+}
+
+.__content .__content-info p {
+    color: #707070;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+
+/* =====[Content Info::End]===== */
+
+
+/* =====[Content Schedule::Start]===== */
+
+.__content .__schedule-box h3 {
+    margin: 0;
+}
+
+
+/* =====[Content Schedule::End]===== */
+
+
+/* =====[Content Included::Start]===== */
+
+.__content .__included-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
