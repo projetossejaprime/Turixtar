@@ -21,7 +21,7 @@
     <header class="mb-6">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container __header-container">
-                <a class="navbar-brand" href="#">Sua Logo</a>
+                <a class="navbar-brand" href="index.html">Sua Logo</a>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control h-100" type="search" placeholder="Pesquise por um estado ou cidade" aria-label="Search">
                     <span class="mdi mdi-magnify"></span>
@@ -100,42 +100,46 @@
                     <div class="__content-schedule">
                         <h2 class="__content-title">Horário de atendimento</h2>
                         <div class="__content-box-list __schedule-box">
-                            <h3><span class="mdi mdi-clock-outline"></span> Segunda à Domingo das <strong>09:30h até as 18:00h</strong></h3>
+                            <h3><span class="mdi mdi-clock-outline"></span> Segunda à Domingo das <b> 09:30h até as 18:00h</b></h3>
                         </div>
                     </div>
                     <div class="__content-included">
                         <h2 class="__content-title">Incluso</h2>
                         <div class="__content-box-list __included-items">
                             <ul>
-                                <li><span class="mdi mdi-check"></span>Lorem Ipsum Dolor</li>
-                                <li><span class="mdi mdi-check"></span>Lorem Ipsum Dolor</li>
-                                <li><span class="mdi mdi-check"></span>Lorem Ipsum Dolor</li>
-                                <li><span class="mdi mdi-check"></span>Lorem Ipsum Dolor</li>
-                                <li><span class="mdi mdi-check"></span>Lorem Ipsum Dolor</li>
-                                <li><span class="mdi mdi-check"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor with a lot more text than usual</li>
+                                <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor Lorem Ipsum Dolor with a lot more text than usual and waaaaay longer because everyone loves tons of text to read</li>
+                                <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor</li>
                             </ul>
                         </div>
                     </div>
                     <div class="__content-not-included">
                         <h2 class="__content-title">Não incluso</h2>
                         <div class="__content-box-list __not-included-items">
-                            <h3><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</h3>
+                            <ul>
+                                <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor with a lot more text than usual</li>
+                                <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor Lorem Ipsum Dolor with a lot more text than usual and waaaaay longer because everyone loves tons of text to read</li>
+                                <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="__content-important-info">
                         <h2 class="__content-title">Informações importantes</h2>
                         <div class="__content-box-list __important-info-items">
-                            <h3><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</h3>
-                            <h3><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</h3>
+                            <ul>
+                                <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor with a lot more text than usual</li>
+                                <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor Lorem Ipsum Dolor with a lot more text than usual and waaaaay longer because everyone loves tons of text to read</li>
+                                <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</li>
+                                <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -151,7 +155,7 @@
                         <h3>Temáticos</h3>
                     </div>
                     <div class="__ticket-btn">
-                        <button type="button" class="__btn-ticket-window">Conferir Disponibilidades</button>
+                        <button type="button" class="__btn-ticket-window" data-toggle="modal" data-target="#modal_ticket">Conferir Disponibilidades</button>
                     </div>
                 </div>
             </div>
@@ -161,10 +165,9 @@
     <div class="container __cards-container __cards-container-details mb-6">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 __text-side">
-                <h3><span class="mdi mdi-tag"></span> Melhores ofertas</h3>
-                <p>As atrações perfeitas para curtir com seus familiares. Aproveite as nossas promoções imperdíveis! <a href="#">Ver todos</a></p>
+                <h3 class="mb-4">Confira outras atrações</h3>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 owl-carousel __cards-side">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 owl-carousel __cards-side __cards-side-details ">
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura1.png" alt="Card image cap">
                     <div class="__card-body">
@@ -173,7 +176,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +189,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -199,7 +202,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +215,7 @@
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -225,7 +228,7 @@
                             <h3>
                                 <small>A partir de</small> R$ 600,00
                             </h3>
-                            <a href="#" class="__card-btn">Saber mais</a>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -279,10 +282,68 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modal_ticket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <!-- <div class="modal-header border-0 p-2">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                <div class="modal-body">
+                    <div class="container __modal-steps-container">
+                        <div class="row">
+                            <div class="col-lg-8 __ticket-calendar-section">
+                                <h3>1. Selecione a data de entrada</h3>
+                                <div class="__ticket-calendar">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 __ticket-schedule-section">
+                                <h3>2. Selecione o horário</h3>
+                                <form>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            08:00
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            10:00
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            17:00
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            19:00
+                                        </label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success shadow w-100">Confirmar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/plugins/owl/owl-carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script>
+        // OWL Carousel 
+
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel({
                 loop: true,
@@ -310,6 +371,70 @@
                 }
             });
         });
+
+        // Modal Tickets
+
+        $("#btnEndStep1").click(function() {
+            $("#step1").addClass('hideMe');
+            $("#step2").removeClass('hideMe');
+        });
+        $("#btnEndStep2").click(function() {
+            $("#step2").addClass('hideMe');
+            $("#step3").removeClass('hideMe');
+        });
+        $("#btnEndStep3").click(function() {
+            // Whatever your final validation and form submission requires
+            $("#sampleModal").modal("hide");
+        });
+
+        // Link do Stack Overflow
+        // https://stackoverflow.com/questions/31132044/how-i-can-create-3-steps-in-the-same-modal-window
+
+        // Increaser input
+
+        var inputNumber = document.getElementById('__input-number');
+
+        function decrease() {
+            if (inputNumber.value > 0) {
+                inputNumber.value--;
+            }
+        }
+
+        function increase() {
+            if (inputNumber.value < 30) {
+                inputNumber.value++;
+            }
+        }
+
+        // =========preços==========
+
+        // Settings object that controls default parameters for library methods:
+        accounting.settings = {
+            currency: {
+                symbol: "R$", // default currency symbol is '$'
+                format: "%s%v", // controls output: %s = symbol, %v = value/number (can be object: see below)
+                decimal: ",", // decimal point separator
+                thousand: ".", // thousands separator
+                precision: 2 // decimal places
+            },
+            number: {
+                precision: 0, // default precision on numbers is 0
+                thousand: ".",
+                decimal: ","
+            }
+        }
+
+
+        var unitPrice = document.getElementsByClassName('__unit-price');
+        var totalPrice = document.getElementsByClassName('__total-price');
+        var units = document.getElementsByClassName('__input-number');
+
+        var column = [];
+        for (var i = 0; i < unitPrice.length; i++) {
+            totalPrice[i].textContent = accounting.formatMoney(units[i].value * unitPrice[i].textContent)
+        }
+
+        console.log(totalPrice[0].textContent);
     </script>
 </body>
 

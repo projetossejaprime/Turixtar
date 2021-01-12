@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="mb-6">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container __header-container">
                 <a class="navbar-brand" href="index.html">Sua Logo</a>
@@ -65,60 +65,21 @@
         </nav>
     </header>
 
-    <section class="__booking-box mb-6">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-12">
-                    <form class="__booking-box-form" action="#">
-                        <div class="form-group">
-                            <label for="select1">Localização</label>
-                            <input type="text" class="form-control" name="destino" placeholder="Escolha um destino" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="select2">Check-in</label>
-                            <input type="date" class="form-control" name="entrada" placeholder="Insira uma data de entrada" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="select3">Check-out</label>
-                            <input type="date" class="form-control" name="saida" placeholder="Insira uma data de saída" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="select4">Hóspedes</label>
-                            <select name="hospedes" class="form-control">
-                                <option value="" selected>SELECIONE</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
-                            </select>
-                        </div>
-                        <button class="__booking-search-btn" type="submit"><span class="mdi mdi-magnify"></span></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container mb-6">
-        <div class="__destination-gallery">
-            <div class="__destination-card __dest-1">
-                <img src="assets/images/imbituba-sc.jpg" alt="Imagem de Imbituba-SC">
-            </div>
-            <div class="__destination-card __dest-2">
-                <img src="assets/images/laguna-sc.jpg" alt="Imagem de Laguna-SC">
-            </div>
-            <div class="__destination-card __dest-3">
-                <img src="assets/images/florianopolis-sc.jpg" alt="Imagem de Floarianópolis-SC">
-            </div>
-            <div class="__destination-card __dest-4">
-                <img src="assets/images/curitiba-pr.jpg" alt="Imagem de Curitiba-PR">
+    <div class="container-fluid mb-6">
+        <div class="row">
+            <div class="col-lg-12 __attractions-hero">
+                <h4 class="m-0">Passeios</h4>
             </div>
         </div>
     </div>
 
-    <div class="container __cards-container mb-6">
+
+    <div class="container __cards-container __cards-container-details mb-6">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 __text-side">
-                <h3><span class="mdi mdi-tag"></span> Melhores ofertas</h3>
-                <p>As atrações perfeitas para curtir com seus familiares. Aproveite as nossas promoções imperdíveis! <a href="#">Ver todos</a></p>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 __text-side">
+                <h3 class="mb-4">Ingressos mais vendidos</h3>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-carousel __cards-side">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 owl-carousel __cards-side __cards-side-details ">
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura1.png" alt="Card image cap">
                     <div class="__card-body">
@@ -187,103 +148,14 @@
         </div>
     </div>
 
-    <div class="container __cards-container mb-6">
-        <div class="row row-reverse">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 __text-side">
-                <h3><span class="mdi mdi-castle"></span> Temáticos</h3>
-                <p>Visite as melhores trilhas da região e crie memórias inesquecíveis com a galera! <a href="#">Ver todos</a></p>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-carousel __cards-side">
-                <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-restaurante1.png" alt="Card image cap">
-                    <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
-                        <div class="__card-body-bottom">
-                            <h3>
-                                <small>De 924,00 por</small> R$ 600,00
-                            </h3>
-                            <a href="details.html" class="__card-btn">Saber mais</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-restaurante2.png" alt="Card image cap">
-                    <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
-                        <div class="__card-body-bottom">
-                            <h3>
-                                <small>A partir de</small> R$ 600,00
-                            </h3>
-                            <a href="details.html" class="__card-btn">Saber mais</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-restaurante3.png" alt="Card image cap">
-                    <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
-                        <div class="__card-body-bottom">
-                            <h3>
-                                <small>De 924,00 por</small> R$ 600,00
-                            </h3>
-                            <a href="details.html" class="__card-btn">Saber mais</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-restaurante4.png" alt="Card image cap">
-                    <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
-                        <div class="__card-body-bottom">
-                            <h3>
-                                <small>A partir de</small> R$ 600,00
-                            </h3>
-                            <a href="details.html" class="__card-btn">Saber mais</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-restaurante5.png" alt="Card image cap">
-                    <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
-                        <div class="__card-body-bottom">
-                            <h3>
-                                <small>De 924,00 por</small> R$ 600,00
-                            </h3>
-                            <a href="details.html" class="__card-btn">Saber mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container __cards-container mb-6">
+    <div class="container __cards-container __cards-container-details mb-6">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 __text-side">
-                <h3> <span class="mdi mdi-hiking"></span> Aventuras</h3>
-                <p>Confira aventuras radicais perto de você e vivencie experiências únicas com os melhores preços! <a href="#">Ver todos</a></p>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 __text-side">
+                <h3 class="mb-4">Serra Furada, SC</h3>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-carousel __cards-side">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 owl-carousel __cards-side __cards-side-details ">
                 <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-hotel1.png" alt="Card image cap">
-                    <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
-                        <div class="__card-body-bottom">
-                            <h3>
-                                <small>De 924,00 por</small> R$ 600,00
-                            </h3>
-                            <a href="details.html" class="__card-btn">Saber mais</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-hotel2.png" alt="Card image cap">
+                    <img class="__card-img-top" src="assets/images/img-aventura1.png" alt="Card image cap">
                     <div class="__card-body">
                         <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
                         <div class="__card-body-bottom">
@@ -296,7 +168,7 @@
                 </div>
 
                 <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-hotel3.png" alt="Card image cap">
+                    <img class="__card-img-top" src="assets/images/img-aventura2.png" alt="Card image cap">
                     <div class="__card-body">
                         <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
                         <div class="__card-body-bottom">
@@ -309,7 +181,7 @@
                 </div>
 
                 <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-hotel4.png" alt="Card image cap">
+                    <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
                     <div class="__card-body">
                         <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
                         <div class="__card-body-bottom">
@@ -322,7 +194,7 @@
                 </div>
 
                 <div class="px-0 mx-1 item __card">
-                    <img class="__card-img-top" src="assets/images/img-hotel5.png" alt="Card image cap">
+                    <img class="__card-img-top" src="assets/images/img-aventura4.png" alt="Card image cap">
                     <div class="__card-body">
                         <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
                         <div class="__card-body-bottom">
@@ -333,68 +205,170 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura5.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container mb-6">
-        <div class="__promo-container">
-            <div class="__promo-gallery">
-                <div class="__promo-card __promo-1">
-                    <img src="assets/images/banner-ferias.png" alt="Promo férias 2021">
+    <div class="container __cards-container __cards-container-details mb-6">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 __text-side">
+                <h3 class="mb-4">Grão-Pará, SC</h3>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 owl-carousel __cards-side __cards-side-details ">
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura1.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="__promo-card __promo-2">
-                    <img src="assets/images/banner-descontos.png" alt="Promo descontos imperdíveis">
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura2.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura4.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura5.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <section class="__all-attractions mb-6">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 __attractions-title">
-                    <h2>Confira todas as atrações</h2>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="__attractions-card">
-                        <a href="attractions.html">
-                            <img src="assets/images/cavera.jpg" alt="Caverá country park">
-                            <span class="mdi mdi-castle"></span>
-                            <h3>Temáticos</h3>
-                        </a>
+    <div class="container __cards-container __cards-container-details mb-6">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 __text-side">
+                <h3 class="mb-4">Urubici, SC</h3>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 owl-carousel __cards-side __cards-side-details ">
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura1.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="__attractions-card">
-                        <a href="attractions.html">
-                            <img src="assets/images/hiking.jpg" alt="Caminhada">
-                            <span class="mdi mdi-hiking"></span>
-                            <h3>Aventura</h3>
-                        </a>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura2.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="__attractions-card">
-                        <a href="attractions.html">
-                            <img src="assets/images/museu.jpg" alt="Museus">
-                            <span class="mdi mdi-bank"></span>
-                            <h3>Museus</h3>
-                        </a>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="__attractions-card">
-                        <a href="attractions.html">
-                            <img src="assets/images/trilha.jpg" alt="Passeios">
-                            <span class="mdi mdi-walk"></span>
-                            <h3>Passeios</h3>
-                        </a>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura4.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>De 924,00 por</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-0 mx-1 item __card">
+                    <img class="__card-img-top" src="assets/images/img-aventura5.png" alt="Card image cap">
+                    <div class="__card-body">
+                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-body-bottom">
+                            <h3>
+                                <small>A partir de</small> R$ 600,00
+                            </h3>
+                            <a href="details.html" class="__card-btn">Saber mais</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="__benefits">
         <div class="container">
@@ -442,10 +416,95 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modal_ticket" tabindex="-1" aria-labelledby="modal_ticket_Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modal_ticket_Label">Modal title</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container modal-split">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>1. Selecione a data de entrada:</h3>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>2. Selecione o horário</h3>
+                                <form>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          08:00
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          10:00
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          17:00
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          19:00
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary my-1 w-100">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container modal-split">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3>3. Selecione os ingressos desejados:</h3>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="__table-row-ticket">
+                                    <h4>Ingresso Individual</h4>
+                                    <p>De 13 até 59 anos</p>
+                                    <div class="__table-row-price-box">
+                                        <h5>R$<span>0,00</span></h5>
+                                        <div class="__input-box">
+                                            <button class="__btn-input-number" type="button" id="__decrease" onclick="decrease()">-</button>
+                                            <input class="__input-number" type="number" id="__input-number" value="4" disabled>
+                                            <button class="__btn-input-number" type="button" id="__increase" onclick="increase()">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-split">
+                        3
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <!--Nothing Goes Here but is needed! -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/plugins/owl/owl-carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script>
+        // OWL Carousel 
+
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel({
                 loop: true,
@@ -456,26 +515,106 @@
                 center: true,
                 responsive: {
                     0: {
-                        items: 1
-                    },
-                    320: {
                         items: 1.2
                     },
                     425: {
-                        items: 1.8
+                        items: 2
                     },
-                    516: {
+                    576: {
                         items: 2.2
                     },
                     768: {
                         items: 3
                     },
                     1000: {
-                        items: 3
+                        items: 4
                     }
                 }
             });
         });
+
+        // Modal Tickets
+
+        $(document).ready(function() {
+            prep_modal();
+        });
+
+        function prep_modal() {
+            $(".modal").each(function() {
+
+                var element = this;
+                var pages = $(this).find('.modal-split');
+
+                if (pages.length != 0) {
+                    pages.hide();
+                    pages.eq(0).show();
+
+                    var b_button = document.createElement("button");
+                    b_button.setAttribute("type", "button");
+                    b_button.setAttribute("class", "btn btn-primary");
+                    b_button.setAttribute("style", "display: none;");
+                    b_button.innerHTML = "Back";
+
+                    var n_button = document.createElement("button");
+                    n_button.setAttribute("type", "button");
+                    n_button.setAttribute("class", "btn btn-primary");
+                    n_button.innerHTML = "Next";
+
+                    $(this).find('.modal-footer').append(b_button).append(n_button);
+
+
+                    var page_track = 0;
+
+                    $(n_button).click(function() {
+
+                        this.blur();
+
+                        if (page_track == 0) {
+                            $(b_button).show();
+                        }
+
+                        if (page_track == pages.length - 2) {
+                            $(n_button).text("Submit");
+                        }
+
+                        if (page_track == pages.length - 1) {
+                            $(element).find("form").submit();
+                        }
+
+                        if (page_track < pages.length - 1) {
+                            page_track++;
+
+                            pages.hide();
+                            pages.eq(page_track).show();
+                        }
+
+
+                    });
+
+                    $(b_button).click(function() {
+
+                        if (page_track == 1) {
+                            $(b_button).hide();
+                        }
+
+                        if (page_track == pages.length - 1) {
+                            $(n_button).text("Next");
+                        }
+
+                        if (page_track > 0) {
+                            page_track--;
+
+                            pages.hide();
+                            pages.eq(page_track).show();
+                        }
+
+
+                    });
+
+                }
+
+            });
+        }
     </script>
 </body>
 

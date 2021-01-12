@@ -20,6 +20,7 @@ body {
 }
 
 body {
+    background-color: #f5f5f5 !important;
     height: 100%;
 }
 
@@ -53,6 +54,10 @@ body {
     display: flex;
     align-items: flex-end;
     text-align: right;
+}
+
+.hideMe {
+    display: none;
 }
 
 
@@ -146,15 +151,22 @@ header .navbar {
     flex-direction: row !important;
     flex-wrap: nowrap;
     justify-content: center !important;
+    border: 1px solid transparent;
+    border-radius: 10px;
     width: 65%;
     height: 50px;
     margin-right: 15px;
+    transition: .4s;
+}
+
+.__header-container .form-inline:hover {
+    border: 1px solid rgb(133, 133, 240);
 }
 
 .__header-container .form-inline input {
     background: #F6F6F6;
     border: none;
-    width: 90%;
+    width: 95%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-top-left-radius: 10px;
@@ -168,7 +180,7 @@ header .navbar {
     font-size: 1.4rem;
     background: #F6F6F6;
     width: 40px;
-    height: 50px;
+    height: 48px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -185,7 +197,7 @@ header .navbar {
     border-radius: 8px;
     margin-right: 10px;
     padding: 0;
-    transition: .3s ease-in;
+    transition: .2s ease-in;
 }
 
 .__header-container .__header-login-btn:hover {
@@ -219,20 +231,22 @@ header .navbar {
     text-decoration: none !important;
     font-size: 1rem;
     font-weight: 500;
-    text-transform: uppercase;
-    width: 140px;
-    border-radius: 10px;
+    width: 120px;
+    border: 1px solid transparent;
+    border-radius: 8px;
     margin-right: 15px;
     padding: 5px;
-    transition: .4s ease-in-out;
+    transition: .2s ease-out;
 }
 
 .__header-container .navbar-nav .__navbar-link:hover {
-    background-color: rgb(220, 220, 255);
+    /* background-color: rgb(242, 242, 255);*/
+    border: 1px solid rgb(22, 22, 194);
+    color: rgb(22, 22, 194);
 }
 
 .__header-container .navbar-nav .__navbar-link span {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -255,6 +269,7 @@ header .navbar {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background: #fff;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 5px 10px;
     width: 100%;
@@ -375,7 +390,7 @@ header .navbar {
 }
 
 .__booking-box .__booking-box-form .__booking-search-btn:hover {
-    background: transparent;
+    background: rgb(216, 216, 248);
 }
 
 .__booking-search-btn span {
@@ -413,8 +428,8 @@ header .navbar {
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 400;
     background: transparent;
     width: 100%;
     height: 100%;
@@ -423,7 +438,7 @@ header .navbar {
 }
 
 .__destination-gallery .__destination-card:hover::after {
-    content: ":)";
+    content: "Ver mais";
     background: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
@@ -460,11 +475,31 @@ header .navbar {
     grid-area: dest-4;
 }
 
+@media (max-width: 767.98px) {
+    .__destination-gallery {
+        display: grid;
+        grid-template-areas: 'dest-1 dest-1 dest-3 dest-3' 'dest-2 dest-2 dest-4 dest-4';
+        grid-gap: 5px;
+        height: 350px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}
+
 
 /* ================::Cards Container::================ */
 
 .__cards-container {
-    height: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 35px 0;
+    transition: .4s;
+}
+
+.__cards-container:hover {
+    border: 1px solid rgb(119, 138, 247) !important;
 }
 
 .__cards-container-details {
@@ -473,11 +508,11 @@ header .navbar {
 
 @media (max-width: 991.98px) {
     .__cards-container {
-        margin: 80px;
+        margin: 40px;
         height: auto;
     }
     .__cards-side {
-        height: 300px !important;
+        height: 330px !important;
     }
 }
 
@@ -501,20 +536,23 @@ header .navbar {
     color: black;
     font-size: 2rem;
     font-weight: bold;
+    width: 100%;
 }
 
-.__text-side small {
+
+/* .__text-side small {
     color: gray;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 30px;
-}
+} */
 
 .__text-side p {
     color: #676767;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: normal;
-    line-height: 1.6rem;
+    line-height: 1.2rem;
+    width: 100%;
 }
 
 @media (max-width: 1199.98px) {
@@ -543,16 +581,33 @@ header .navbar {
     position: relative;
 }
 
+.__cards-side .owl-stage-outer {
+    margin: 0 -15px;
+}
+
+@media (max-width: 575.98px) {
+    .__cards-side {
+        padding: 0 !important;
+    }
+    .__cards-side .owl-stage-outer {
+        margin: 0;
+    }
+}
+
+.__cards-side-details {
+    height: 330px;
+}
+
 .__cards-side .owl-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 10%;
-    width: 100%;
+    width: 105%;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -2.5%;
     margin-top: -25px;
 }
 
@@ -561,14 +616,16 @@ header .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #252525;
-    background-color: #ffffff;
+    /* color: #252525; */
+    color: #fff;
+    /* background-color: #ffffff; */
+    background-color: #3d84e0;
     font-size: 1.2rem;
     width: 40px;
     height: 40px;
-    border: 1px solid #dddddd;
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 5px 15px;
     transition: .3s;
 }
 
@@ -576,22 +633,24 @@ header .navbar {
 .__cards-side .owl-nav .owl-prev:hover {
     color: #000000;
     background-color: #ffffff;
-    border: 1px solid #a1a1a1;
+    border: 2px solid #a1a1a1;
 }
 
 .__cards-side .owl-item {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100% !important;
 }
 
 .__cards-side .__card {
     width: 100%;
     min-width: 180px;
-    height: 100% !important;
+    height: 92% !important;
     background-color: #FFFFFF;
     border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+    position: relative;
 }
 
 .__cards-side .__card .__card-img-top {
@@ -604,8 +663,15 @@ header .navbar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: #fff;
+    width: 100%;
+    height: 55%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     padding: 10px;
-    height: 145px;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
 }
 
 .__cards-side .__card .__card-body h5 {
@@ -653,42 +719,79 @@ header .navbar {
 }
 
 
-/* ================::Promo Container::================ */
+/* ================::promo Container::================ */
 
-.__promo-container {
-    height: 300px;
+.__promo-gallery {
+    display: grid;
+    grid-template-areas: 'promo-1 promo-2 promo-2';
+    grid-gap: 5px;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.__promo-container .teste-imagem {
+.__promo-gallery .__promo-card {
     height: 100%;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
-.__promo-container .teste-imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: .4s ease-in-out;
-}
-
-.teste-imagem:hover>img {
-    transform: scale(1.1);
-}
-
-.teste-imagem::after {
+.__promo-gallery .__promo-card::after {
     content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background: transparent;
     width: 100%;
     height: 100%;
-    background-color: transparent;
     position: absolute;
-    right: 0;
-    z-index: 4;
-    transition: .4s ease-in-out;
+    transition: all .4s;
 }
 
-.teste-imagem:hover::after {
-    background-color: rgba(0, 0, 0, 0.43);
+.__promo-gallery .__promo-card:hover::after {
+    content: "Ver mais";
+    background: rgba(0, 17, 114, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.__promo-gallery .__promo-card img {
+    width: 100%;
+    height: 100%;
+    object-position: right;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .4s;
+}
+
+.__promo-gallery .__promo-card:hover>img {
+    transform: scale(1.08);
+}
+
+.__promo-gallery .__promo-1 {
+    grid-area: promo-1;
+}
+
+.__promo-gallery .__promo-2 {
+    grid-area: promo-2;
+}
+
+@media (max-width: 767.98px) {
+    .__promo-gallery {
+        display: grid;
+        grid-template-areas: 'promo-1 promo-1' 'promo-2 promo-2';
+        grid-gap: 5px;
+        height: 350px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
 }
 
 
@@ -702,19 +805,23 @@ header .navbar {
 }
 
 .__all-attractions .__attractions-card {
+    border-radius: 12px;
+    height: 255px;
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+.__all-attractions .__attractions-card a {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
-    height: 255px;
-    margin: 25px 0;
+    text-decoration: none;
+    height: 100%;
     position: relative;
-    cursor: pointer;
-    overflow: hidden;
 }
 
-.__all-attractions .__attractions-card::after {
+.__all-attractions .__attractions-card a::after {
     content: "";
     background-color: rgba(48, 48, 48, 0.43);
     width: 100%;
@@ -727,11 +834,11 @@ header .navbar {
     transition: .4s;
 }
 
-.__all-attractions .__attractions-card:hover::after {
+.__all-attractions .__attractions-card a:hover::after {
     background-color: rgba(48, 48, 48, 0.1);
 }
 
-.__all-attractions .__attractions-card:hover>img {
+.__all-attractions .__attractions-card a:hover>img {
     transform: scale(1.1);
 }
 
@@ -759,7 +866,9 @@ header .navbar {
 /* ================::Benefits Container::================ */
 
 .__benefits {
-    border-top: 2px solid #707070;
+    background: #fff;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 -5px 15px;
     padding: 60px 0;
 }
 
@@ -854,6 +963,10 @@ header .navbar {
     .__footer h3 {
         font-size: 2rem;
     }
+    .__footer-content .input-group {
+        width: 80%;
+        min-width: 260px;
+    }
     .__footer-content .input-group .__email-input-btn {
         background-color: #1274e4 !important;
         width: 80px !important;
@@ -924,20 +1037,44 @@ header .navbar {
 .__content .__content-box-list {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
     margin-bottom: 25px;
     padding: 25px;
 }
 
+.__content .__content-box-list ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
 
-/* =====[Ticket Window::Start]===== */
+.__content .__content-box-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+.__content .__content-box-list ul li span {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+
+/* ==========Content::Ticket Window::========== */
 
 .__details-content .__ticket-window {
     display: grid;
     grid-template-areas: 'price-info price-info ticket-type' 'ticket-btn ticket-btn ticket-btn';
     background-color: #fff;
     height: 240px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
     border-radius: 8px;
     position: sticky !important;
     top: 40px;
@@ -952,7 +1089,7 @@ header .navbar {
 .__ticket-window .__ticket-price-info h3 {
     display: flex;
     flex-direction: column;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     width: 98%;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     margin: 0;
@@ -1001,10 +1138,7 @@ header .navbar {
 }
 
 
-/* =====[Ticket Window::End]===== */
-
-
-/* =====[Content Info::Start]===== */
+/* ==========Content::Content Info::========== */
 
 .__content .__content-info {
     height: 240px;
@@ -1016,25 +1150,119 @@ header .navbar {
     line-height: 1.6rem;
 }
 
+.__included-items ul li span {
+    color: #3C9800;
+}
 
-/* =====[Content Info::End]===== */
+.__not-included-items ul li span {
+    color: #DF2121;
+}
 
-
-/* =====[Content Schedule::Start]===== */
-
-.__content .__schedule-box h3 {
-    margin: 0;
+.__important-info-items ul li span {
+    color: #FF5757;
 }
 
 
-/* =====[Content Schedule::End]===== */
+/* ==========Content::Content Schedule Box::========== */
 
-
-/* =====[Content Included::Start]===== */
-
-.__content .__included-items {
+.__content .__schedule-box h3 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.__content .__schedule-box h3 b {
+    margin-left: 7px;
+}
+
+.__content .__schedule-box h3 span {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+@media (max-width: 767.98px) {
+    .__content .__schedule-box h3 {
+        font-size: 1rem;
+    }
+    .__content .__content-info p {
+        font-size: 1rem;
+    }
+    .__content .__content-box-list ul li {
+        font-size: 1rem;
+    }
+}
+
+
+/* ==========Content::Modal::========== */
+
+#modal_ticket h3 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+#modal_ticket .__ticket-calendar-section .__ticket-calendar {
+    width: 75%;
+    height: 250px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+#modal_ticket .__ticket-schedule-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+}
+
+#modal_ticket .__ticket-schedule-section .form-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+}
+
+#modal_ticket .__ticket-schedule-section .form-check label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+#modal_ticket .__ticket-schedule-section .form-check input {
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+}
+
+
+/* ==========================::::ATTRACTIONS::::========================== */
+
+.__attractions-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/curitiba-pr.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+.__attractions-hero::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 1;
+}
+
+.__attractions-hero h4 {
+    color: white;
+    font-size: 4rem;
+    z-index: 2;
 }
