@@ -292,7 +292,7 @@
                     </button>
                 </div> -->
                 <div class="modal-body">
-                    <div class="container __modal-steps-container">
+                    <div class="container" id="screen1">
                         <div class="row">
                             <div class="col-lg-8 __ticket-calendar-section">
                                 <h3>1. Selecione a data de entrada</h3>
@@ -328,8 +328,80 @@
                                         </label>
                                     </div>
 
-                                    <button type="submit" class="btn btn-success shadow w-100">Confirmar</button>
+                                    <button type="button" class="btn btn-success shadow w-100 text-uppercase" id="btnConfirmScreen1">Confirmar</button>
                                 </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container hideMe" id="screen2">
+                        <div class="row">
+                            <div class="col-lg-12 __ticket-select-screen">
+                                <h3>3. Selecione os ingressos desejados:</h3>
+                                <div class="__ticket-row border-0">
+                                    <div class="__ticket-info-box">
+                                        <h4 class="text-uppercase">Ingresso Individual</h4>
+                                        <p>De 13 até 59 anos</p>
+                                        <h3 class="__ticket-price">R$ 0,00</h3>
+                                    </div>
+                                    <div class="__ticket-amount-box">
+                                        <button class="__btn-ticket-number" type="button" id="__decrease" onclick="decrease('__ticket-number-1')">-</button>
+                                        <input class="__input-ticket-number" type="number" id="__ticket-number-1" value="0" disabled>
+                                        <button class="__btn-ticket-number" type="button" id="__increase" onclick="increase('__ticket-number-1')">+</button>
+                                    </div>
+                                </div>
+                                <div class="__ticket-row">
+                                    <div class="__ticket-info-box">
+                                        <h4 class="text-uppercase">Ingresso - Meia Entrada</h4>
+                                        <p>A partir de 6 anos</p>
+                                        <h3 class="__ticket-price">R$ 0,00</h3>
+                                    </div>
+                                    <div class="__ticket-amount-box">
+                                        <button class="__btn-ticket-number" type="button" id="__decrease" onclick="decrease('__ticket-number-2')">-</button>
+                                        <input class="__input-ticket-number" type="number" id="__ticket-number-2" value="0" disabled>
+                                        <button class="__btn-ticket-number" type="button" id="__increase" onclick="increase('__ticket-number-2')">+</button>
+                                    </div>
+                                </div>
+                                <div class="__ticket-row">
+                                    <div class="__ticket-info-box">
+                                        <h4 class="text-uppercase">Ingresso Infantil</h4>
+                                        <p>Até 6 anos</p>
+                                        <h3 class="__ticket-price">R$ 0,00</h3>
+                                    </div>
+                                    <div class="__ticket-amount-box">
+                                        <button class="__btn-ticket-number" type="button" id="__decrease" onclick="decrease('__ticket-number-3')">-</button>
+                                        <input class="__input-ticket-number" type="number" id="__ticket-number-3" value="0" disabled>
+                                        <button class="__btn-ticket-number" type="button" id="__increase" onclick="increase('__ticket-number-3')">+</button>
+                                    </div>
+                                </div>
+                                <div class="__ticket-row">
+                                    <div class="__ticket-info-box">
+                                        <h4>Valor total</h4>
+                                        <h3 class="__total-price">R$ 0,00</h3>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-outline-secondary w-50 text-uppercase py-2 mb-2" id="btnBackScreen2">Voltar</button>
+                                <button type="button" class="btn btn-success shadow w-50 text-uppercase py-2" id="btnConfirmScreen2">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container hideMe" id="screen3">
+                        <div class="row">
+                            <div class="col-lg-12 __ticket-confirmation-screen">
+                                <h3 class="text-center">Seu item foi adicionado com sucesso!</h3>
+                                <div class="__ticket-row">
+                                    <div class="__ticket-info-box">
+                                        <div class="__ticket-image">
+                                        </div>
+                                        <div class="__ticket-info">
+                                            <h4 class="text-uppercase">Ingresso Comum - Caverá Park</h4>
+                                            <p>Sábado, 23 de janeiro de 2021</p>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="__total-price">R$ 0,00</h3>
+                                </div>
+                                <a href="" data-dismiss="modal" aria-label="Close">Continuar Comprando</a>
+                                <button type="button" class="btn btn-success shadow w-50 text-uppercase py-2" id="btnConfirmScreen2">Ver carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -354,12 +426,15 @@
                 center: true,
                 responsive: {
                     0: {
+                        items: 1
+                    },
+                    320: {
                         items: 1.2
                     },
                     425: {
-                        items: 2
+                        items: 1.8
                     },
-                    576: {
+                    516: {
                         items: 2.2
                     },
                     768: {
@@ -374,15 +449,19 @@
 
         // Modal Tickets
 
-        $("#btnEndStep1").click(function() {
-            $("#step1").addClass('hideMe');
-            $("#step2").removeClass('hideMe');
+        $("#btnConfirmScreen1").click(function() {
+            $("#screen1").addClass('hideMe');
+            $("#screen2").removeClass('hideMe');
         });
-        $("#btnEndStep2").click(function() {
-            $("#step2").addClass('hideMe');
-            $("#step3").removeClass('hideMe');
+        $("#btnBackScreen2").click(function() {
+            $("#screen2").addClass('hideMe');
+            $("#screen1").removeClass('hideMe');
         });
-        $("#btnEndStep3").click(function() {
+        $("#btnConfirmScreen2").click(function() {
+            $("#screen2").addClass('hideMe');
+            $("#screen3").removeClass('hideMe');
+        });
+        $("#btnEndscreen3").click(function() {
             // Whatever your final validation and form submission requires
             $("#sampleModal").modal("hide");
         });
@@ -392,15 +471,15 @@
 
         // Increaser input
 
-        var inputNumber = document.getElementById('__input-number');
-
-        function decrease() {
+        function decrease(id) {
+            var inputNumber = document.getElementById(id);
             if (inputNumber.value > 0) {
                 inputNumber.value--;
             }
         }
 
-        function increase() {
+        function increase(id) {
+            var inputNumber = document.getElementById(id);
             if (inputNumber.value < 30) {
                 inputNumber.value++;
             }

@@ -696,6 +696,12 @@ header .navbar {
     margin: auto 0;
 }
 
+@media (max-width: 991.98px) {
+    .__cards-side .__card .__card-body .__card-body-bottom h3 {
+        font-size: .9rem;
+    }
+}
+
 .__cards-side .__card .__card-body .__card-body-bottom .__card-btn {
     color: #ffffff;
     font-size: .9rem !important;
@@ -1199,6 +1205,7 @@ header .navbar {
 /* ==========Content::Modal::========== */
 
 #modal_ticket h3 {
+    align-self: flex-start;
     font-size: 1.2rem;
     margin-bottom: 25px;
 }
@@ -1236,6 +1243,103 @@ header .navbar {
     width: 20px;
     height: 20px;
     margin: auto 0;
+}
+
+#modal_ticket .__ticket-select-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.__ticket-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid rgb(197, 197, 197);
+    padding: 15px 0;
+}
+
+.__ticket-row .__ticket-info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.__ticket-row .__ticket-info-box h4 {
+    font-size: 1rem;
+}
+
+.__ticket-row .__ticket-info-box .__ticket-price {
+    font-size: 2.4rem !important;
+    margin-bottom: 0 !important;
+}
+
+.__ticket-confirmation-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.__ticket-confirmation-screen .__ticket-row .__ticket-info-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.__ticket-confirmation-screen .__ticket-row .__ticket-info-box .__ticket-image {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(1, 74, 170);
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+.__ticket-confirmation-screen .__ticket-row .__ticket-info-box p {
+    color: gray;
+}
+
+.__ticket-row .__ticket-amount-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.__ticket-row .__ticket-amount-box .__input-ticket-number {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 2rem;
+    height: 100%;
+    width: 60px;
+    border: none;
+    background: none;
+}
+
+.__ticket-row .__ticket-amount-box .__btn-ticket-number {
+    font-size: 2rem;
+    height: 100%;
+    width: 40px;
+    border: none;
+    background: none;
+}
+
+.__ticket-row .__ticket-amount-box .__btn-ticket-number:hover {
+    color: blue;
+}
+
+.__ticket-row .__total-price {
+    align-self: center !important;
+    color: rgb(19, 105, 224);
+    font-size: 2.4rem !important;
+    margin-bottom: 0 !important;
 }
 
 
