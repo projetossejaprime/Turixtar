@@ -38,25 +38,25 @@
 
                 <div class="collapse navbar-collapse my-3" id="navbarSupportedContent">
                     <div class="navbar-nav mr-auto">
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-walk"></span> Passeios
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-silverware-variant"></span> Restaurantes
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-pine-tree"></span> Parques
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-hiking"></span> Aventura
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-bank"></span>Museus
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-castle"></span>Temáticos
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-van-utility"></span>Transfer
                         </a>
                     </div>
@@ -64,6 +64,28 @@
             </div>
         </nav>
     </header>
+
+    <!-- --========Fixed Cart========-- -->
+    <button class="__cart-ball">
+        <span class="mdi mdi-cart-outline"></span>
+    </button>
+
+    <div class="__cart-window __cart-animate-show">
+        <div class="__cart-content">
+            <h3>Seu Carrinho</h3>
+            <div class="__cart-line">
+                <h4>Itens</h4>
+                <h4>05</h4>
+            </div>
+            <div class="__cart-line">
+                <h4>Total</h4>
+                <h4>R$219,38</h4>
+            </div>
+            <!-- <button class="__cart-btn-outline">Continuar comprando</button> -->
+            <a href="cart-page.html" class="__cart-btn">Abrir Carrinho</a>
+        </div>
+    </div>
+    <!-- --========Fixed Cart End========-- -->
 
     <div class="__details-title mb-6">
         <div class="container">
@@ -75,16 +97,40 @@
     <div class="container mb-6">
         <div class="__destination-gallery">
             <div class="__destination-card __dest-1">
-                <img src="assets/images/imbituba-sc.jpg" alt="Imagem de Imbituba-SC">
+                <a href="">
+                    <div class="__destination-card-info">
+                        <h3>Imbituba-SC</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <img src="assets/images/imbituba-sc.jpg" alt="Imagem de Imbituba-SC">
+                </a>
             </div>
             <div class="__destination-card __dest-2">
-                <img src="assets/images/laguna-sc.jpg" alt="Imagem de Laguna-SC">
+                <a href="">
+                    <div class="__destination-card-info">
+                        <h3>Laguna-SC</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <img src="assets/images/laguna-sc.jpg" alt="Imagem de Laguna-SC">
+                </a>
             </div>
             <div class="__destination-card __dest-3">
-                <img src="assets/images/florianopolis-sc.jpg" alt="Imagem de Floarianópolis-SC">
+                <a href="">
+                    <div class="__destination-card-info">
+                        <h3>Florianópolis-SC</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <img src="assets/images/florianopolis-sc.jpg" alt="Imagem de Floarianópolis-SC">
+                </a>
             </div>
             <div class="__destination-card __dest-4">
-                <img src="assets/images/curitiba-pr.jpg" alt="Imagem de Curitiba-PR">
+                <a href="">
+                    <div class="__destination-card-info">
+                        <h3>Curitiba-PR</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <img src="assets/images/curitiba-pr.jpg" alt="Imagem de Curitiba-PR">
+                </a>
             </div>
         </div>
     </div>
@@ -108,7 +154,7 @@
                         <div class="__content-box-list __included-items">
                             <ul>
                                 <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor with a lot more text than usual</li>
-                                <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor Lorem Ipsum Dolor with a lot more text than usual and waaaaay longer because everyone loves tons of text to read</li>
+                                <li><span class="mdi mdi-check-bold"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                                 <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor</li>
                                 <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor</li>
                                 <li><span class="mdi mdi-check-bold"></span>Lorem Ipsum Dolor</li>
@@ -121,7 +167,7 @@
                         <div class="__content-box-list __not-included-items">
                             <ul>
                                 <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor with a lot more text than usual</li>
-                                <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor Lorem Ipsum Dolor with a lot more text than usual and waaaaay longer because everyone loves tons of text to read</li>
+                                <li><span class="mdi mdi-close"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                                 <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</li>
                                 <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</li>
                                 <li><span class="mdi mdi-close"></span>Lorem Ipsum Dolor</li>
@@ -134,7 +180,7 @@
                         <div class="__content-box-list __important-info-items">
                             <ul>
                                 <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor with a lot more text than usual</li>
-                                <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor Lorem Ipsum Dolor with a lot more text than usual and waaaaay longer because everyone loves tons of text to read</li>
+                                <li><span class="mdi mdi-exclamation"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                                 <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</li>
                                 <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</li>
                                 <li><span class="mdi mdi-exclamation"></span>Lorem Ipsum Dolor</li>
@@ -171,7 +217,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura1.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -184,7 +230,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura2.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -197,7 +243,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -210,7 +256,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura4.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -223,7 +269,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura5.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -294,13 +340,13 @@
                 <div class="modal-body">
                     <div class="container" id="screen1">
                         <div class="row">
-                            <div class="col-lg-8 __ticket-calendar-section">
+                            <div class="col-lg-6 __ticket-calendar-section">
                                 <h3>1. Selecione a data de entrada</h3>
                                 <div class="__ticket-calendar">
-
+                                    <div id="calendar" data-date="12/03/2012"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 __ticket-schedule-section">
+                            <div class="col-lg-6 __ticket-schedule-section">
                                 <h3>2. Selecione o horário</h3>
                                 <form>
                                     <div class="form-check">
@@ -328,7 +374,7 @@
                                         </label>
                                     </div>
 
-                                    <button type="button" class="btn btn-success shadow w-100 text-uppercase" id="btnConfirmScreen1">Confirmar</button>
+                                    <button type="button" class="__btn-modal-confirm" id="btnConfirmScreen1">Confirmar <span class="mdi mdi-chevron-right"></span></button>
                                 </form>
                             </div>
                         </div>
@@ -345,7 +391,7 @@
                                     </div>
                                     <div class="__ticket-amount-box">
                                         <button class="__btn-ticket-number" type="button" id="__decrease" onclick="decrease('__ticket-number-1')">-</button>
-                                        <input class="__input-ticket-number" type="number" id="__ticket-number-1" value="0" disabled>
+                                        <input class="__input-ticket-number" type="text" id="__ticket-number-1" value="0" disabled>
                                         <button class="__btn-ticket-number" type="button" id="__increase" onclick="increase('__ticket-number-1')">+</button>
                                     </div>
                                 </div>
@@ -357,7 +403,7 @@
                                     </div>
                                     <div class="__ticket-amount-box">
                                         <button class="__btn-ticket-number" type="button" id="__decrease" onclick="decrease('__ticket-number-2')">-</button>
-                                        <input class="__input-ticket-number" type="number" id="__ticket-number-2" value="0" disabled>
+                                        <input class="__input-ticket-number" type="text" id="__ticket-number-2" value="0" disabled>
                                         <button class="__btn-ticket-number" type="button" id="__increase" onclick="increase('__ticket-number-2')">+</button>
                                     </div>
                                 </div>
@@ -369,7 +415,7 @@
                                     </div>
                                     <div class="__ticket-amount-box">
                                         <button class="__btn-ticket-number" type="button" id="__decrease" onclick="decrease('__ticket-number-3')">-</button>
-                                        <input class="__input-ticket-number" type="number" id="__ticket-number-3" value="0" disabled>
+                                        <input class="__input-ticket-number" type="text" id="__ticket-number-3" value="0" disabled>
                                         <button class="__btn-ticket-number" type="button" id="__increase" onclick="increase('__ticket-number-3')">+</button>
                                     </div>
                                 </div>
@@ -379,8 +425,11 @@
                                         <h3 class="__total-price">R$ 0,00</h3>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-outline-secondary w-50 text-uppercase py-2 mb-2" id="btnBackScreen2">Voltar</button>
-                                <button type="button" class="btn btn-success shadow w-50 text-uppercase py-2" id="btnConfirmScreen2">Adicionar ao Carrinho</button>
+                                <div class="__ticket-row">
+                                    <a class="w-25 text-uppercase text-center py-2" id="btnBackScreen2">Voltar</a>
+                                    <button type="button" class="__btn-modal-confirm w-50" id="btnConfirmScreen2">Adicionar ao Carrinho <span class="mdi mdi-chevron-right"></span></button>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -485,7 +534,7 @@
             }
         }
 
-        // =========preços==========
+        // ========= Preços ==========
 
         // Settings object that controls default parameters for library methods:
         accounting.settings = {
@@ -514,6 +563,8 @@
         }
 
         console.log(totalPrice[0].textContent);
+
+        // Calendar
     </script>
 </body>
 

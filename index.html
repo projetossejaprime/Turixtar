@@ -38,25 +38,25 @@
 
                 <div class="collapse navbar-collapse my-3" id="navbarSupportedContent">
                     <div class="navbar-nav mr-auto">
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-walk"></span> Passeios
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-silverware-variant"></span> Restaurantes
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-pine-tree"></span> Parques
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-hiking"></span> Aventura
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-bank"></span>Museus
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-castle"></span>Temáticos
                         </a>
-                        <a class="__navbar-link" href="#">
+                        <a class="__navbar-link" href="attractions.html">
                             <span class="mdi mdi-van-utility"></span>Transfer
                         </a>
                     </div>
@@ -65,49 +65,109 @@
         </nav>
     </header>
 
-    <section class="__booking-box mb-6">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-12">
+    <!-- --========Fixed Cart========-- -->
+    <button class="__cart-ball">
+        <span class="mdi mdi-cart-outline"></span>
+    </button>
+
+    <div class="__cart-window __cart-animate-show">
+        <div class="__cart-content">
+            <h3>Seu Carrinho</h3>
+            <div class="__cart-line">
+                <h4>Itens</h4>
+                <h4>05</h4>
+            </div>
+            <div class="__cart-line">
+                <h4>Total</h4>
+                <h4>R$219,38</h4>
+            </div>
+            <!-- <button class="__cart-btn-outline">Continuar comprando</button> -->
+            <a href="cart-page.html" class="__cart-btn">Abrir Carrinho</a>
+        </div>
+    </div>
+    <!-- --========Fixed Cart End========-- -->
+
+    <div class="container mb-6">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12">
+                <div class="__booking-box">
+                    <div class="__booking-tabs">
+                        <ul>
+                            <li class="__booking-tab">Alimentação</li>
+                            <li class="__booking-tab active">Eventos</li>
+                            <li class="__booking-tab">Hospedagem</li>
+                            <li class="__booking-tab">Lazer</li>
+                            <li class="__booking-tab">Transporte</li>
+                        </ul>
+                    </div>
                     <form class="__booking-box-form" action="#">
                         <div class="form-group">
                             <label for="select1">Localização</label>
                             <input type="text" class="form-control" name="destino" placeholder="Escolha um destino" required>
                         </div>
                         <div class="form-group">
-                            <label for="select2">Check-in</label>
+                            <label for="select2">Data</label>
                             <input type="date" class="form-control" name="entrada" placeholder="Insira uma data de entrada" required>
                         </div>
                         <div class="form-group">
-                            <label for="select3">Check-out</label>
-                            <input type="date" class="form-control" name="saida" placeholder="Insira uma data de saída" required>
+                            <label for="select3">Hora</label>
+                            <input type="time" class="form-control" name="hora" placeholder="Insira o horário desejado" required>
                         </div>
                         <div class="form-group">
-                            <label for="select4">Hóspedes</label>
+                            <label for="select4">Nº de pessoas</label>
                             <select name="hospedes" class="form-control">
-                                <option value="" selected>SELECIONE</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
-                            </select>
+                                    <option value="" selected>SELECIONE</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+                                    <option value="5+">5 ou mais</option>
+                                </select>
                         </div>
                         <button class="__booking-search-btn" type="submit"><span class="mdi mdi-magnify"></span></button>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="container mb-6">
+        <div class="__destination-title">
+            <h2>Principais destinos</h2>
+            <p>Talvez você goste desses lugares:</p>
+        </div>
         <div class="__destination-gallery">
             <div class="__destination-card __dest-1">
-                <img src="assets/images/imbituba-sc.jpg" alt="Imagem de Imbituba-SC">
+                <a href="">
+                    <div class="__destination-card-info">
+                        <h3>Imbituba-SC</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <img src="assets/images/imbituba-sc.jpg" alt="Imagem de Imbituba-SC">
+                </a>
             </div>
             <div class="__destination-card __dest-2">
-                <img src="assets/images/laguna-sc.jpg" alt="Imagem de Laguna-SC">
+                <a href="">
+                    <div class="__destination-card-info">
+                        <h3>Laguna-SC</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <img src="assets/images/laguna-sc.jpg" alt="Imagem de Laguna-SC">
+                </a>
             </div>
             <div class="__destination-card __dest-3">
-                <img src="assets/images/florianopolis-sc.jpg" alt="Imagem de Floarianópolis-SC">
+                <a href="">
+                    <div class="__destination-card-info">
+                        <h3>Florianópolis-SC</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <img src="assets/images/florianopolis-sc.jpg" alt="Imagem de Floarianópolis-SC">
+                </a>
             </div>
             <div class="__destination-card __dest-4">
-                <img src="assets/images/curitiba-pr.jpg" alt="Imagem de Curitiba-PR">
+                <a href="">
+                    <div class="__destination-card-info">
+                        <h3>Curitiba-PR</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <img src="assets/images/curitiba-pr.jpg" alt="Imagem de Curitiba-PR">
+                </a>
             </div>
         </div>
     </div>
@@ -118,11 +178,14 @@
                 <h3><span class="mdi mdi-tag"></span> Melhores ofertas</h3>
                 <p>As atrações perfeitas para curtir com seus familiares. Aproveite as nossas promoções imperdíveis! <a href="#">Ver todos</a></p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-carousel __cards-side">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-one owl-carousel __cards-side">
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura1.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-title">
+                            <small>Aventura/Rio de Janeiro</small>
+                            <h5>Teste de título maior do card título grande gigante</h5>
+                        </div>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -135,7 +198,10 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura2.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-title">
+                            <small>Passeios/Imbituba</small>
+                            <h5>Teste de título do card</h5>
+                        </div>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -148,7 +214,10 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-title">
+                            <small>Passeios/Curitiba</small>
+                            <h5>Teste de título do card</h5>
+                        </div>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -161,7 +230,10 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura4.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-title">
+                            <small>Temáticos/Penha</small>
+                            <h5>Teste de título do card</h5>
+                        </div>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -174,7 +246,10 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-aventura5.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <div class="__card-title">
+                            <small>Parques/Florianópolis</small>
+                            <h5>Teste de título do card</h5>
+                        </div>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -193,11 +268,11 @@
                 <h3><span class="mdi mdi-castle"></span> Temáticos</h3>
                 <p>Visite as melhores trilhas da região e crie memórias inesquecíveis com a galera! <a href="#">Ver todos</a></p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-carousel __cards-side">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-one owl-carousel __cards-side">
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-restaurante1.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -210,7 +285,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-restaurante2.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -223,7 +298,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-restaurante3.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -236,7 +311,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-restaurante4.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -249,7 +324,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-restaurante5.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -268,11 +343,11 @@
                 <h3> <span class="mdi mdi-hiking"></span> Aventuras</h3>
                 <p>Confira aventuras radicais perto de você e vivencie experiências únicas com os melhores preços! <a href="#">Ver todos</a></p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-carousel __cards-side">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 owl-one owl-carousel __cards-side">
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-hotel1.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -285,7 +360,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-hotel2.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -298,7 +373,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-hotel3.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -311,7 +386,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-hotel4.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>A partir de</small> R$ 600,00
@@ -324,7 +399,7 @@
                 <div class="px-0 mx-1 item __card">
                     <img class="__card-img-top" src="assets/images/img-hotel5.png" alt="Card image cap">
                     <div class="__card-body">
-                        <h5 class="__card-title">TESTE DE TÍTULO DO CARD</h5>
+                        <h5 class="__card-title">Teste de título do card</h5>
                         <div class="__card-body-bottom">
                             <h3>
                                 <small>De 924,00 por</small> R$ 600,00
@@ -352,45 +427,57 @@
 
     <section class="__all-attractions mb-6">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 __attractions-title">
-                    <h2>Confira todas as atrações</h2>
+            <div class="__attractions-title">
+                <h2>Confira todas as atrações</h2>
+            </div>
+            <div class="owl-two owl-carousel">
+
+                <div class="__attractions-card">
+                    <a href="attractions.html">
+                        <img src="assets/images/cavera.jpg" alt="Caverá country park">
+                        <span class="mdi mdi-castle"></span>
+                        <h3>Temáticos</h3>
+                    </a>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="__attractions-card">
-                        <a href="attractions.html">
-                            <img src="assets/images/cavera.jpg" alt="Caverá country park">
-                            <span class="mdi mdi-castle"></span>
-                            <h3>Temáticos</h3>
-                        </a>
-                    </div>
+
+                <div class="__attractions-card">
+                    <a href="attractions.html">
+                        <img src="assets/images/hiking.jpg" alt="Caminhada">
+                        <span class="mdi mdi-hiking"></span>
+                        <h3>Aventura</h3>
+                    </a>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="__attractions-card">
-                        <a href="attractions.html">
-                            <img src="assets/images/hiking.jpg" alt="Caminhada">
-                            <span class="mdi mdi-hiking"></span>
-                            <h3>Aventura</h3>
-                        </a>
-                    </div>
+
+                <div class="__attractions-card">
+                    <a href="attractions.html">
+                        <img src="assets/images/museu.jpg" alt="Museus">
+                        <span class="mdi mdi-bank"></span>
+                        <h3>Museus</h3>
+                    </a>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="__attractions-card">
-                        <a href="attractions.html">
-                            <img src="assets/images/museu.jpg" alt="Museus">
-                            <span class="mdi mdi-bank"></span>
-                            <h3>Museus</h3>
-                        </a>
-                    </div>
+
+                <div class="__attractions-card">
+                    <a href="attractions.html">
+                        <img src="assets/images/trilha.jpg" alt="Passeios">
+                        <span class="mdi mdi-walk"></span>
+                        <h3>Passeios</h3>
+                    </a>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="__attractions-card">
-                        <a href="attractions.html">
-                            <img src="assets/images/trilha.jpg" alt="Passeios">
-                            <span class="mdi mdi-walk"></span>
-                            <h3>Passeios</h3>
-                        </a>
-                    </div>
+
+                <div class="__attractions-card">
+                    <a href="attractions.html">
+                        <img src="assets/images/curitiba-pr.jpg" alt="Passeios">
+                        <span class="mdi mdi-city"></span>
+                        <h3>Curitiba</h3>
+                    </a>
+                </div>
+
+                <div class="__attractions-card">
+                    <a href="attractions.html">
+                        <img src="assets/images/florianopolis-sc.jpg" alt="Passeios">
+                        <span class="mdi mdi-bridge"></span>
+                        <h3>Florianópolis-SC</h3>
+                    </a>
                 </div>
             </div>
         </div>
@@ -446,8 +533,18 @@
     <script src="assets/plugins/owl/owl-carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel({
+        var bookingTab = document.getElementsByClassName('__booking-tab');
+
+        for (var i = 0; i < bookingTab.length; i++) {
+            bookingTab[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        $('.__carts-container').ready(function() {
+            $(".owl-one").owlCarousel({
                 loop: true,
                 margin: 10,
                 autoplay: true,
@@ -475,6 +572,28 @@
                     },
                     1200: {
                         items: 3
+                    }
+                }
+            });
+        });
+
+        $('.__all-attractions').ready(function() {
+            $(".owl-two").owlCarousel({
+                loop: false,
+                margin: 10,
+                autoplay: true,
+                nav: true,
+                navText: ["<span class='mdi mdi-chevron-left'>", "<span class='mdi mdi-chevron-right'>"],
+                center: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
                     }
                 }
             });

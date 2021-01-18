@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart test</title>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            outline: none !important;
+            font-family: 'Roboto', 'sans-serif';
+        }
+        
+        body,
+        html {
+            height: 100%;
+        }
+        
+        body {
+            background: rgb(245, 245, 245);
+            margin: 0;
+        }
+        
+        .__cart-ball {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.4rem;
+            background: #015BFF;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            top: 150px;
+            right: 150px;
+            z-index: 2;
+        }
+        
+        .__cart-ball:hover {
+            background: #3079ff;
+        }
+        
+        .__cart-window {
+            background: #fff;
+            width: 0;
+            height: 0;
+            border-radius: 8px;
+            box-shadow: none;
+            padding: 15px;
+            overflow: hidden;
+            position: absolute;
+            top: 160px;
+            right: 160px;
+            z-index: 1;
+            /* visibility: hidden; */
+            transition: 1s ease;
+            opacity: 0;
+        }
+        
+        .__cart-ball:hover+.__cart-window {
+            /* visibility: visible; */
+            animation-duration: 1s;
+            animation-name: cartShow;
+            width: 230px;
+            height: 195px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+            opacity: 1;
+        }
+        
+        .__cart-window:hover {
+            width: 230px;
+            height: 195px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+            opacity: 1;
+        }
+        
+        .__cart-window .__cart-content {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .__cart-window .__cart-content h3 {
+            text-align: center;
+            font-weight: bold;
+            white-space: nowrap;
+            margin: 5px 0;
+        }
+        
+        .__cart-window .__cart-content .__cart-line {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        
+        .__cart-window .__cart-content .__cart-line h4 {
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 15px 0;
+        }
+        
+        .__cart-window .__cart-content button,
+        .__cart-window .__cart-content a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-decoration: none;
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 4px;
+            /* margin: 5px 0; */
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        .__cart-window .__cart-content button.__cart-btn-outline {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            background: none;
+        }
+        
+        .__cart-window .__cart-content button.__cart-btn-outline:hover {
+            border: 1px solid rgb(0, 0, 0);
+        }
+        
+        .__cart-window .__cart-content a.__cart-btn {
+            color: #fff;
+            background: #5570FF;
+        }
+        
+        .__cart-window .__cart-content a.__cart-btn:hover {
+            background: #001eb3;
+        }
+        /* ======================::Animation Code::====================== */
+        /* .__cart-animate-show {
+            animation-duration: .6s;
+            animation-name: cartShow;
+        } */
+        
+        @keyframes cartShow {
+            from {
+                width: 0;
+                height: 0;
+                border-radius: 120px;
+                border-top-right-radius: 8px;
+            }
+            to {
+                width: 230px;
+                height: 195px;
+                border-radius: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="__cart-ball">
+        <span class="mdi mdi-cart-outline"></span>
+    </button>
+
+    <div class="__cart-window __cart-animate-show">
+        <div class="__cart-content">
+            <h3>Seu Carrinho</h3>
+            <div class="__cart-line">
+                <h4>Total</h4>
+                <h4>R$219,38</h4>
+            </div>
+            <div class="__cart-line">
+                <h4>Itens</h4>
+                <h4>05</h4>
+            </div>
+            <!-- <button class="__cart-btn-outline">Continuar comprando</button> -->
+            <a href="cart-page.html" class="__cart-btn">Finalizar compra</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        // $(".__cart-ball").click(function() {
+        //     $(".__cart-window").toggle();
+        // })
+        // $('body').click(() => {
+        //     console.log('click')
+        // })
+    </script>
+</body>
+
+</html>
