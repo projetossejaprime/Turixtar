@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turixtar</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive_cards.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/owl/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/owl/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container __header-container">
+                <a class="navbar-brand" href="index.html">Sua Logo</a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control h-100" type="search" placeholder="Pesquise por um estado ou cidade" aria-label="Search">
+                    <span class="mdi mdi-magnify"></span>
+                </form>
+
+                <button class="__header-login-btn">
+                    <span class="mdi mdi-account"></span>
+                    Fazer login
+                </button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+                    <div class="navbar-nav mr-auto">
+                        <a class="__navbar-link" href="attractions.html">
+                            <span class="mdi mdi-walk"></span> Passeios
+                        </a>
+                        <a class="__navbar-link" href="attractions.html">
+                            <span class="mdi mdi-silverware-variant"></span> Restaurantes
+                        </a>
+                        <a class="__navbar-link" href="attractions.html">
+                            <span class="mdi mdi-pine-tree"></span> Parques
+                        </a>
+                        <a class="__navbar-link" href="attractions.html">
+                            <span class="mdi mdi-hiking"></span> Aventura
+                        </a>
+                        <a class="__navbar-link" href="attractions.html">
+                            <span class="mdi mdi-bank"></span>Museus
+                        </a>
+                        <a class="__navbar-link" href="attractions.html">
+                            <span class="mdi mdi-castle"></span>Temáticos
+                        </a>
+                        <a class="__navbar-link" href="attractions.html">
+                            <span class="mdi mdi-van-utility"></span>Transfer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- --========Fixed Cart========-- -->
+    <button class="__cart-ball">
+        <span class="mdi mdi-cart-outline"></span>
+    </button>
+
+    <div class="__cart-window __cart-animate-show">
+        <div class="__cart-content">
+            <h3>Seu Carrinho</h3>
+            <div class="__cart-line">
+                <h4>Itens</h4>
+                <h4>05</h4>
+            </div>
+            <div class="__cart-line">
+                <h4>Total</h4>
+                <h4>R$219,38</h4>
+            </div>
+            <!-- <button class="__cart-btn-outline">Continuar comprando</button> -->
+            <a href="cart-page.html" class="__cart-btn">Abrir Carrinho</a>
+        </div>
+    </div>
+    <!-- --========Fixed Cart End========-- -->
+
+    <div class="container-fluid mb-6">
+        <div class="row">
+            <div class="col-lg-12 __attractions-hero">
+                <h4 class="m-0">Passeios</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-6">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="__side-filter">
+                    <h2>Filtrar</h2>
+                    <div class="__filter-group">
+                        <h3>Ordenação</h3>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Destaques</span>
+                                <input type="radio" name="order_item" id="order_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Melhores preços</span>
+                                <input type="radio" name="order_item" id="order_item" value="option1">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="__filter-group">
+                        <h3>Estados</h3>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Estado</span>
+                                <input type="radio" name="state_item" id="state_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Estado</span>
+                                <input type="radio" name="state_item" id="state_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Estado</span>
+                                <input type="radio" name="state_item" id="state_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Estado</span>
+                                <input type="radio" name="state_item" id="state_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Estado</span>
+                                <input type="radio" name="state_item" id="state_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Estado</span>
+                                <input type="radio" name="state_item" id="state_item" value="option1">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="__filter-group">
+                        <h3>Cidades</h3>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Cidade</span>
+                                <input type="radio" name="city_item" id="city_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Cidade</span>
+                                <input type="radio" name="city_item" id="city_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Cidade</span>
+                                <input type="radio" name="city_item" id="city_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Cidade</span>
+                                <input type="radio" name="city_item" id="city_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Cidade</span>
+                                <input type="radio" name="city_item" id="city_item" value="option1">
+                            </a>
+                        </div>
+                        <div class="__filter-item-wrapper">
+                            <a href="#" class="__filter-item">
+                                <span>Cidade</span>
+                                <input type="radio" name="city_item" id="city_item" value="option1">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 __cards-content">
+                <div class="__cards-side d-flex justify-content-around align-items-start">
+                    <div class="px-0 item __normal __card">
+                        <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
+                        <div class="__card-body">
+                            <div class="__card-title">
+                                <small>Passeios/Curitiba</small>
+                                <h5>Teste de título do card</h5>
+                            </div>
+                            <div class="__card-body-bottom">
+                                <h3>
+                                    <small>A partir de</small> R$ 600,00
+                                </h3>
+                                <a href="details.html" class="__card-btn">Saber mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-0 item __normal __card">
+                        <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
+                        <div class="__card-body">
+                            <div class="__card-title">
+                                <small>Passeios/Curitiba</small>
+                                <h5>Teste de título do card</h5>
+                            </div>
+                            <div class="__card-body-bottom">
+                                <h3>
+                                    <small>A partir de</small> R$ 600,00
+                                </h3>
+                                <a href="details.html" class="__card-btn">Saber mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-0 item __normal __card">
+                        <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
+                        <div class="__card-body">
+                            <div class="__card-title">
+                                <small>Passeios/Curitiba</small>
+                                <h5>Teste de título do card</h5>
+                            </div>
+                            <div class="__card-body-bottom">
+                                <h3>
+                                    <small>A partir de</small> R$ 600,00
+                                </h3>
+                                <a href="details.html" class="__card-btn">Saber mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-0 item __normal __card">
+                        <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
+                        <div class="__card-body">
+                            <div class="__card-title">
+                                <small>Passeios/Curitiba</small>
+                                <h5>Teste de título do card</h5>
+                            </div>
+                            <div class="__card-body-bottom">
+                                <h3>
+                                    <small>A partir de</small> R$ 600,00
+                                </h3>
+                                <a href="details.html" class="__card-btn">Saber mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-0 item __normal __card">
+                        <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
+                        <div class="__card-body">
+                            <div class="__card-title">
+                                <small>Passeios/Curitiba</small>
+                                <h5>Teste de título do card</h5>
+                            </div>
+                            <div class="__card-body-bottom">
+                                <h3>
+                                    <small>A partir de</small> R$ 600,00
+                                </h3>
+                                <a href="details.html" class="__card-btn">Saber mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-0 item __normal __card">
+                        <img class="__card-img-top" src="assets/images/img-aventura3.png" alt="Card image cap">
+                        <div class="__card-body">
+                            <div class="__card-title">
+                                <small>Passeios/Curitiba</small>
+                                <h5>Teste de título do card</h5>
+                            </div>
+                            <div class="__card-body-bottom">
+                                <h3>
+                                    <small>A partir de</small> R$ 600,00
+                                </h3>
+                                <a href="details.html" class="__card-btn">Saber mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="__benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="__benefits-card">
+                        <span class="mdi mdi-lock"></span>
+                        <h3>Segurança na compra</h3>
+                        <p>Compre na internet de maneira segura e facilitada.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="__benefits-card">
+                        <span class="mdi mdi-credit-card-outline"></span>
+                        <h3>Flexibilidade no pagamento</h3>
+                        <p>Diferentes meios e parcelamentos que cabem no seu bolso.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="__benefits-card">
+                        <span class="mdi mdi-checkbox-marked-outline"></span>
+                        <h3>Voucher recebido na hora</h3>
+                        <p>Tenha seu voucher gerado automaticamente logo após a compra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="__footer">
+        <div class="container __footer-content">
+            <div class="__footer-icons">
+                <img src="assets/images/meios-pagamento.png" alt="meios de pagamento">
+            </div>
+            <hr>
+            <div class="input-group">
+                <input type="email" name="email" id="footer_email" class="form-control __email-input" aria-label="..." placeholder="Deixe aqui o seu email para receber promoções">
+                <div class="form-group-btn">
+                    <button type="submit" class="btn __email-input-btn">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <h2>&copy Desenvolvido com <span><i class="mdi mdi-heart" aria-hidden="true"></i></span> pelo grupo SEJAPRIME</h2>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal_ticket" tabindex="-1" aria-labelledby="modal_ticket_Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modal_ticket_Label">Modal title</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container modal-split">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>1. Selecione a data de entrada:</h3>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>2. Selecione o horário</h3>
+                                <form>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          08:00
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          10:00
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          17:00
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          19:00
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary my-1 w-100">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container modal-split">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3>3. Selecione os ingressos desejados:</h3>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="__table-row-ticket">
+                                    <h4>Ingresso Individual</h4>
+                                    <p>De 13 até 59 anos</p>
+                                    <div class="__table-row-price-box">
+                                        <h5>R$<span>0,00</span></h5>
+                                        <div class="__input-box">
+                                            <button class="__btn-input-number" type="button" id="__decrease" onclick="decrease()">-</button>
+                                            <input class="__input-number" type="number" id="__input-number" value="4" disabled>
+                                            <button class="__btn-input-number" type="button" id="__increase" onclick="increase()">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-split">
+                        3
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <!--Nothing Goes Here but is needed! -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/plugins/owl/owl-carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+        // OWL Carousel 
+
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                nav: true,
+                navText: ["<span class='mdi mdi-arrow-left'>", "<span class='mdi mdi-arrow-right'>"],
+                center: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    320: {
+                        items: 1.2
+                    },
+                    425: {
+                        items: 1.8
+                    },
+                    516: {
+                        items: 2.2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+        });
+
+        // Modal Tickets
+
+        $(document).ready(function() {
+            prep_modal();
+        });
+
+        function prep_modal() {
+            $(".modal").each(function() {
+
+                var element = this;
+                var pages = $(this).find('.modal-split');
+
+                if (pages.length != 0) {
+                    pages.hide();
+                    pages.eq(0).show();
+
+                    var b_button = document.createElement("button");
+                    b_button.setAttribute("type", "button");
+                    b_button.setAttribute("class", "btn btn-primary");
+                    b_button.setAttribute("style", "display: none;");
+                    b_button.innerHTML = "Back";
+
+                    var n_button = document.createElement("button");
+                    n_button.setAttribute("type", "button");
+                    n_button.setAttribute("class", "btn btn-primary");
+                    n_button.innerHTML = "Next";
+
+                    $(this).find('.modal-footer').append(b_button).append(n_button);
+
+
+                    var page_track = 0;
+
+                    $(n_button).click(function() {
+
+                        this.blur();
+
+                        if (page_track == 0) {
+                            $(b_button).show();
+                        }
+
+                        if (page_track == pages.length - 2) {
+                            $(n_button).text("Submit");
+                        }
+
+                        if (page_track == pages.length - 1) {
+                            $(element).find("form").submit();
+                        }
+
+                        if (page_track < pages.length - 1) {
+                            page_track++;
+
+                            pages.hide();
+                            pages.eq(page_track).show();
+                        }
+
+
+                    });
+
+                    $(b_button).click(function() {
+
+                        if (page_track == 1) {
+                            $(b_button).hide();
+                        }
+
+                        if (page_track == pages.length - 1) {
+                            $(n_button).text("Next");
+                        }
+
+                        if (page_track > 0) {
+                            page_track--;
+
+                            pages.hide();
+                            pages.eq(page_track).show();
+                        }
+
+
+                    });
+
+                }
+
+            });
+        }
+    </script>
+</body>
+
+</html>
