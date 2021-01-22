@@ -328,15 +328,10 @@
         </div>
     </footer>
 
-    <!-- Modal -->
+    <!-- Modal (limpo)-->
     <div class="modal fade" id="modal_ticket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <!-- <div class="modal-header border-0 p-2">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div> -->
                 <div class="modal-body">
                     <div class="container" id="screen1">
                         <div class="row">
@@ -428,7 +423,6 @@
                                 <div class="__ticket-row">
                                     <a class="w-25 text-uppercase text-center py-2" id="btnBackScreen2">Voltar</a>
                                     <button type="button" class="__btn-modal-confirm w-50" id="btnConfirmScreen2">Adicionar ao Carrinho <span class="mdi mdi-chevron-right"></span></button>
-
                                 </div>
                             </div>
                         </div>
@@ -458,6 +452,137 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="modal_ticket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container" id="screen1">
+                        <div class="row">
+                            <div class="col-lg-6 __ticket-calendar-section">
+                                <h3>1. Selecione a data de entrada</h3>
+                                <div class="__ticket-calendar">
+                                    <div id="calendar" data-date="12/03/2012"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 __ticket-schedule-section">
+                                <h3>2. Selecione o horário</h3>
+                                <form>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                                08:00
+                                            </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                                10:00
+                                            </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                                17:00
+                                            </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                                19:00
+                                            </label>
+                                    </div>
+
+                                    <button type="button" class="__btn-modal-confirm" id="btnConfirmScreen1">Confirmar <span class="mdi mdi-chevron-right"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container hideMe" id="screen2">
+                        <div class="row">
+                            <div class="col-lg-12 __ticket-select-screen">
+                                <h3>3. Selecione os ingressos desejados:</h3>
+                                <div class="__ticket-row border-0">
+                                    <div class="__ticket-info-box">
+                                        <h4 class="text-uppercase">Ingresso Individual</h4>
+                                        <p>De 13 até 59 anos</p>
+                                        <h3 class="__ticket-price d-flex flex-column"><small class="font-1"> De R$120,00 por </small> R$ 0,00</h3>
+                                    </div>
+                                    <div class="test-class">
+                                        <div class="__ticket-amount-box">
+                                            <button class="__btn-ticket-number" type="button" id="__decrease" onclick="decrease('__ticket-number-1')">-</button>
+                                            <input class="__input-ticket-number" type="text" id="__ticket-number-1" value="0" disabled>
+                                            <button class="__btn-ticket-number" type="button" id="__increase" onclick="increase('__ticket-number-1')">+</button>
+                                        </div>
+                                        <div class="test-class-box">
+
+                                            <h3 class="__ticket-price mb-0">R$ 0,00</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="__ticket-row">
+                                    <div class="__ticket-info-box">
+                                        <h4 class="text-uppercase">Ingresso - Meia Entrada</h4>
+                                        <p>A partir de 6 anos</p>
+                                        <h3 class="__ticket-price">R$ 0,00</h3>
+                                    </div>
+                                    <div class="__ticket-amount-box">
+                                        <button class="__btn-ticket-number" type="button" id="__decrease" onclick="decrease('__ticket-number-2')">-</button>
+                                        <input class="__input-ticket-number" type="text" id="__ticket-number-2" value="0" disabled>
+                                        <button class="__btn-ticket-number" type="button" id="__increase" onclick="increase('__ticket-number-2')">+</button>
+                                    </div>
+                                </div>
+                                <div class="__ticket-row">
+                                    <div class="__ticket-info-box">
+                                        <h4 class="text-uppercase">Ingresso Infantil</h4>
+                                        <p>Até 6 anos</p>
+                                        <h3 class="__ticket-price">R$ 0,00</h3>
+                                    </div>
+                                    <div class="__ticket-amount-box">
+                                        <button class="__btn-ticket-number" type="button" id="__decrease" onclick="decrease('__ticket-number-3')">-</button>
+                                        <input class="__input-ticket-number" type="text" id="__ticket-number-3" value="0" disabled>
+                                        <button class="__btn-ticket-number" type="button" id="__increase" onclick="increase('__ticket-number-3')">+</button>
+                                    </div>
+                                </div>
+                                <div class="__ticket-row">
+                                    <div class="__ticket-info-box">
+                                        <h4>Valor total</h4>
+                                        <h3 class="__total-price">R$ 0,00</h3>
+                                    </div>
+                                </div>
+                                <div class="__ticket-row">
+                                    <a class="w-25 text-uppercase text-center py-2" id="btnBackScreen2">Voltar</a>
+                                    <button type="button" class="__btn-modal-confirm w-50" id="btnConfirmScreen2">Adicionar ao Carrinho <span class="mdi mdi-chevron-right"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container hideMe" id="screen3">
+                        <div class="row">
+                            <div class="col-lg-12 __ticket-confirmation-screen">
+                                <h3 class="text-center">Seu item foi adicionado com sucesso!</h3>
+                                <div class="__ticket-row">
+                                    <div class="__ticket-info-box">
+                                        <div class="__ticket-image">
+                                        </div>
+                                        <div class="__ticket-info">
+                                            <h4 class="text-uppercase">Ingresso Comum - Caverá Park</h4>
+                                            <p>Sábado, 23 de janeiro de 2021</p>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="__total-price">R$ 0,00</h3>
+                                </div>
+                                <a href="" data-dismiss="modal" aria-label="Close">Continuar Comprando</a>
+                                <button type="button" class="btn btn-success shadow w-50 text-uppercase py-2" id="btnConfirmScreen2">Ver carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/plugins/owl/owl-carousel.js"></script>

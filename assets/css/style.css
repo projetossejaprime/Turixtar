@@ -342,20 +342,20 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
     font-size: .9rem;
     font-weight: 500;
     text-transform: uppercase;
-    background: white;
+    background: none;
     height: 50px;
     border: none;
     border-radius: var(--light-b-radius);
     margin-right: 10px;
     padding: 0 10px;
-    /* transition: .4s ease-in; */
 }
 
 .__header-container .__header-login-btn:hover {
-    background: rgb(219, 228, 255);
+    color: rgb(219, 228, 255);
 }
 
 .__header-container .__header-login-btn span {
@@ -526,59 +526,236 @@ a {
 
 /* ================::Side Menu::================ */
 
-
-/* .__side-menu-wrapper {
-    background-color: #fff;
-    width: 250px;
+.__overlay {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
     height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.3) 5px 0 15px;
-    position: fixed !important;
-    right: 0 !important;
-    top: 0 !important;
-    transform: translateX(300px);
-    z-index: 15;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 20;
 }
 
-.__side-menu-show {
-    width: 50px;
-    height: 50px;
-    background: none;
-    border: none;
-    border-radius: var(--light-b-radius);
+.__overlay.__show {
+    display: block !important;
 }
 
-.__side-menu-show span {
-    color: white;
-    font-size: 2rem;
+
+/* width */
+
+#sidebar-wrapper::-webkit-scrollbar {
+    width: 0;
 }
 
-.__side-menu-hide {
-    width: 50px;
-    height: 50px;
-    background: none;
-    border: none;
+#sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-right: -250px;
+    right: 0;
+    width: 250px;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.3s ease-in 0s;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -moz-transition: all 0.3s ease-in 0s;
+    -ms-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
 }
 
-.__side-menu-hide span {
+.sidebar-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+.sidebar-header .sidebar-close {
     color: var(--light-black);
-    font-size: 2rem;
+    font-size: 1.4rem;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    margin: 0;
 }
 
-.__show-menu {
-    transform: translateX(0);
-    animation-name: showMenu;
-    animation-duration: .4s;
+.sidebar-header .__sidebar-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: white;
+    height: 50px;
+    border: none;
+    padding: 0 10px;
+}
+
+.sidebar-header .__sidebar-login-btn:hover {
+    background: rgb(219, 228, 255);
+}
+
+.sidebar-header .__sidebar-login-btn span {
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+.sidebar-header .sidebar-cart {
+    font-size: 1.4rem;
+    background: none;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.sidebar-header .sidebar-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/florianopolis-sc.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar-header .sidebar-image::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.sidebar-header .sidebar-image h2 {
+    color: white;
+    font-size: 1.4rem;
+    z-index: 3;
+}
+
+.sidebar-nav {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav li .item-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--light-black);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 0 25px;
+}
+
+.sidebar-nav li .item-header span {
+    font-size: 1.2rem;
+}
+
+.sidebar-nav .body-list {
+    padding: 0;
+}
+
+.body-list .list-item {
+    list-style: none;
+    background: rgb(249, 249, 249);
+    padding: 0 0 0 25px;
+    height: 40px;
+    border-bottom: 1px solid rgba(182, 182, 182, 0.1);
     transition: .4s;
 }
 
-@keyframes showMenu {
-    from {
-        transform: translateX(300px);
-    }
-    to {
-        transform: translateX(0);
-    }
-} */
+.body-list .list-item:hover {
+    background: rgba(128, 128, 128, 0.1);
+}
+
+.body-list .list-item a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    color: gray;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    height: 100%;
+}
+
+.body-list .list-item a span {
+    color: var(--light-black);
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+#sidebar-wrapper .sidebar-wpp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    background: #09C676;
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: var(--light-b-radius);
+    margin: 0 auto;
+}
+
+#sidebar-wrapper .sidebar-wpp:hover {
+    background: #09c677cc;
+}
+
+#sidebar-wrapper .sidebar-wpp span {
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+#menu-toggle {
+    color: white;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    border-radius: var(--light-b-radius);
+    transition: .4s;
+}
+
+#menu-toggle:hover {
+    background: rgba(138, 138, 245, 0.466);
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
 
 
 /* ================::Booking box::================ */
@@ -873,7 +1050,7 @@ a {
 .__filter-cards {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: start;
 }
@@ -883,31 +1060,31 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--primary-dark);
     text-decoration: none !important;
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 400;
-    background: var(--primary-dark);
-    width: 110px;
-    height: 110px;
+    background: white;
+    width: 150px;
+    height: 150px;
     /* border: 1px solid var(--primary-dark); */
-    border-radius: var(--light-b-radius);
+    border-radius: 18px;
     margin: 0 10px 10px 0;
     padding: 5px;
     transition: .2s ease-out;
 }
 
 .__filter-card:hover {
-    background: white;
+    background: var(--primary-dark);
 }
 
 .__filter-card span {
-    font-size: 2rem;
+    font-size: 2.4rem;
     transition: .2s ease-out;
 }
 
 .__filter-card:hover {
-    color: var(--primary-dark) !important;
+    color: white !important;
 }
 
 
@@ -1151,7 +1328,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: top;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'montserrat', 'sans-serif';
     height: 100%;
 }
 
@@ -1171,10 +1348,10 @@ a {
 } */
 
 .__text-side p {
-    color: var(--light-description);
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: 1.2rem;
+    color: var(--light-black);
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4rem;
     width: 100%;
 }
 
@@ -1356,10 +1533,10 @@ a {
     text-decoration: none;
     background-color: var(--primary);
     border: 1px solid transparent;
-    border-radius: var(--light-b-radius);
-    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px;
-    width: 110px;
-    padding: 8px 0;
+    border-radius: 50px;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px; */
+    width: 100px;
+    padding: 6px 0;
 }
 
 .__card .__card-body .__card-body-bottom .__card-btn:hover {
@@ -1881,6 +2058,11 @@ a {
 
 
 /* ==========Content::Modal::========== */
+
+
+/* .font-1 {
+    font-size: 1rem;
+} */
 
 #modal_ticket h3 {
     align-self: flex-start;

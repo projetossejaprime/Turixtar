@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/responsive_cards.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/hero.css" rel="stylesheet">
     <link href="assets/plugins/owl/owl.carousel.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/owl/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/aos/aos.css" rel="stylesheet">
@@ -69,16 +68,80 @@
         </nav>
     </header> -->
 
-    <!-- Side menu -->
+    <!-- --========Side Bar========-- -->
+    <div id="sidebar-wrapper">
+        <section class="sidebar-header">
+            <button class="sidebar-close toggle" id="menu-close"><span class="mdi mdi-arrow-right"></span></button>
 
-    <!-- <nav class="__side-menu-wrapper">
-            <button class="__side-menu-hide" id="sideMenuHide"><span class="mdi mdi-arrow-right"></span></button>
-        </nav> -->
+            <button class="__sidebar-login-btn">
+                <span class="mdi mdi-account"></span>
+                Fazer login
+            </button>
+
+            <button class="sidebar-cart"><span class="mdi mdi-cart-outline"></span></button>
+
+            <div class="sidebar-image">
+                <h2>Bem Vindo!</h2>
+            </div>
+        </section>
+        <ul class="sidebar-nav" id="accordion">
+            <li>
+                <button class="item-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Categorias
+                    <span class="mdi mdi-chevron-down"></span>
+                </button>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <ul class="body-list">
+                        <li class="list-item">
+                            <a href="attractions_copy.html">
+                                <span class="mdi mdi-walk"></span> Passeios
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="attractions_copy.html">
+                                <span class="mdi mdi-silverware-variant"></span> Restaurantes
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="attractions_copy.html">
+                                <span class="mdi mdi-pine-tree"></span> Parques
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="attractions_copy.html">
+                                <span class="mdi mdi-hiking"></span> Aventura
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="attractions_copy.html">
+                                <span class="mdi mdi-bank"></span> Museus
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="attractions_copy.html">
+                                <span class="mdi mdi-castle"></span> Temáticos
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="attractions_copy.html">
+                                <span class="mdi mdi-van-utility"></span> Transfer
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <button class="sidebar-wpp">
+            <span class="mdi mdi-whatsapp"></span>
+            Contato no Whatsapp
+        </button>
+    </div>
 
     <!-- --========Fixed Cart========-- -->
     <button class="__cart-ball">
-            <span class="mdi mdi-cart-outline"></span>
-        </button>
+        <span class="mdi mdi-cart-outline"></span>
+    </button>
 
     <div class="__cart-window __cart-animate-show">
         <div class="__cart-content">
@@ -113,7 +176,7 @@
                             Fazer login
                         </button>
 
-                        <button class="__side-menu-show" id="sideMenuShow"><span class="mdi mdi-menu"></span></button>
+                        <button class="__side-menu-show" id="menu-toggle"><span class="mdi mdi-menu"></span></button>
                     </div>
                 </nav>
             </header>
@@ -612,30 +675,13 @@
         </div>
     </footer>
 
+    <div class="__overlay"></div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/plugins/owl/owl-carousel.js"></script>
-    <script type="text/javascript" src="assets/js/parallax-hero.js"></script>
     <script src="assets/plugins/aos/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function() {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-
-            $('#dismiss, .overlay').on('click', function() {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-
         // AOS Init
 
         AOS.init({
@@ -644,25 +690,26 @@
 
         // Side Menu
 
-        var sideMenu = $('.__side-menu-wrapper');
-
-        $('#sideMenuHide').click(function() {
-            sideMenu.removeClass('__show-menu');
-        })
-
-        $('#sideMenuShow').click(function() {
-            sideMenu.addClass('__show-menu');
-        })
+        $("#menu-close, .__overlay").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+            $(".__overlay").removeClass("__show");
+        });
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+            $(".__overlay").addClass("__show");
+        });
 
         // Header
 
-        $(window).bind('scroll', function() {
-            if ($(window).scrollTop() >= $('#cross-line').offset().top + $('#cross-line').outerHeight() - window.innerHeight) {
-                $(".__header").css("transform", "translateY(-60px)");
-            } else {
-                $(".__header").css("transform", "translateY(0)");
-            }
-        });
+        // $(window).bind('scroll', function() {
+        //     if ($(window).scrollTop() >= $('#cross-line').offset().top + $('#cross-line').outerHeight() - window.innerHeight) {
+        //         $(".__header").css("transform", "translateY(-60px)");
+        //     } else {
+        //         $(".__header").css("transform", "translateY(0)");
+        //     }
+        // });
 
         // Booking Container
 
@@ -680,12 +727,12 @@
 
         $('.__carts-container').ready(function() {
             $(".owl-one").owlCarousel({
-                loop: true,
-                margin: 10,
+                loop: false,
+                margin: 25,
                 autoplay: true,
                 nav: true,
                 navText: ["<span class='mdi mdi-arrow-left'>", "<span class='mdi mdi-arrow-right'>"],
-                center: true,
+                center: false,
                 responsive: {
                     0: {
                         items: 1
