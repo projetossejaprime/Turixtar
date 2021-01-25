@@ -2059,10 +2059,9 @@ a {
 
 /* ==========Content::Modal::========== */
 
-
-/* .font-1 {
+.font-1 {
     font-size: 1rem;
-} */
+}
 
 #modal_ticket h3 {
     align-self: flex-start;
